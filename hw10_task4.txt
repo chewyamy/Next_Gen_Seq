@@ -1,0 +1,815 @@
+
+[ac10596@log-1 ac10596]$ ls
+GLIMPSE  hg38        ngs.week2  ngs.week6             slurm-57067987_2.out
+HG00149  NA18627     ngs.week3  ngs.week7             slurm-57067987_3.out
+HG00151  ngs.week1   ngs.week4  ngs.week8             slurm-57067987_4.out
+HG00243  ngs.week11  ngs.week5  slurm-57067987_1.out
+[ac10596@log-1 ac10596]$ cp $SCRATCH/ngs.week11/slurm_template_ac2.sh $SCRATCH
+[ac10596@log-1 ac10596]$ ls
+GLIMPSE  hg38        ngs.week2  ngs.week6             slurm-57067987_2.out
+HG00149  NA18627     ngs.week3  ngs.week7             slurm-57067987_3.out
+HG00151  ngs.week1   ngs.week4  ngs.week8             slurm-57067987_4.out
+HG00243  ngs.week11  ngs.week5  slurm-57067987_1.out  slurm_template_ac2.sh
+[ac10596@log-1 ac10596]$ cd ngs.week11
+[ac10596@log-1 ngs.week11]$ mv slurm_template_ac2.sh task4.sh
+[ac10596@log-1 ngs.week11]$ ls
+ERR156634_1_clean.filt.fastq.gz  ngs_hw10.sh.save    task2.sh.save
+ERR156634_2_clean.filt.fastq.gz  slurm-59692524.out  task3.sh
+fastp.html                       slurm-59698129.out  task4.sh
+fastp.json                       slurm-59698300.out
+ngs_hw10.sh                      task2.sh
+[ac10596@log-1 ngs.week11]$ mv ngs_hw10.sh task1.sh
+[ac10596@log-1 ngs.week11]$ ls
+ERR156634_1_clean.filt.fastq.gz  ngs_hw10.sh.save    task1.sh       task4.sh
+ERR156634_2_clean.filt.fastq.gz  slurm-59692524.out  task2.sh
+fastp.html                       slurm-59698129.out  task2.sh.save
+fastp.json                       slurm-59698300.out  task3.sh
+[ac10596@log-1 ngs.week11]$ nano task4.sh
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[ac10596@log-1 ngs.week11]$ ls
+ERR156634_1_clean.filt.fastq.gz  ngs_hw10.sh.save    task1.sh       task4.sh
+ERR156634_2_clean.filt.fastq.gz  slurm-59692524.out  task2.sh
+fastp.html                       slurm-59698129.out  task2.sh.save
+fastp.json                       slurm-59698300.out  task3.sh
+[ac10596@log-1 ngs.week11]$ nano task2.sh
+[ac10596@log-1 ngs.week11]$ less slurm-59698300.out
+[ac10596@log-1 ngs.week11]$ nano less task2.sh.save
+[ac10596@log-1 ngs.week11]$ less ngs_hw10.sh.save
+[ac10596@log-1 ngs.week11]$ less slurm-59698300.out
+[ac10596@log-1 ngs.week11]$ nano task2.sh
+[ac10596@log-1 ngs.week11]$ nano task1.sh
+[ac10596@log-1 ngs.week11]$ module avail
+
+--------------------------- /share/apps/modulefiles ----------------------------
+   abyss/intel/2.3.0
+   admixtools/intel/7.0.2
+   admixture/1.3.0
+   advanpix-mct/4.9.3.15018
+   amber/openmpi/24.00
+   amber/openmpi/intel/20.06
+   amber/openmpi/intel/20.11
+   amber/openmpi/intel/22.00
+   amber/openmpi/intel/22.03
+   ampl/20240308
+   amplgurobilink/11.0.1
+   anaconda2/2019.10
+   anaconda3/2020.02
+   anaconda3/2020.07
+   anaconda3/2024.02
+   angsd/intel/0.933
+   ansys-em/2023r1
+   ansys/2021r1
+   ansys/2022r2
+   ansys/2023r2
+   ansys/2024r2
+   apbs/3.0.0
+   apptainer/1.2.5
+   apptainer/1.3.0
+   apptainer/1.3.6
+   apptainer/1.4.0
+   argweaver/0.8.1
+   armatus/intel/2.2
+   armatus/intel/2.3
+   aspera-cli/4.4.0
+   aspera/4.1.3.93
+   augustus/intel/3.4.0
+   automake/1.16
+   bagel/openmpi/intel/1.2.2
+   bamtools/intel/2.5.1
+   barnone/1.0
+   bartender/intel/1.1-20210106
+   bases2fastq/2.1.0
+   bbtools/38.91
+   bcftools/intel/1.11
+   bcftools/intel/1.14
+   bcftools/intel/1.19
+   bcl2fastq/2.20.0.422
+   beagle/4.1
+   beagle/5.1
+   beast/1.10.4
+   bedops/intel/2.4.39
+   bedtools/intel/2.29.2
+   berkeley-db/intel/18.1.40
+   berkeleygw/openmpi/intel/4.0
+   bexy/intel/20231122
+   biopython/1.78
+   biopython/intel/1.74
+   bison/gcc/3.7.4
+   blasr/5.3.5
+   blast+/2.11.0
+   blast+/2.13.0
+   blast+/2.15.0
+   blast/2.2.22
+   blender/2.91.0
+   blender/3.6.2
+   blobtools/1.1.1
+   boost/intel/1.74.0
+   boost/openmpi/intel/1.81.0
+   bowtie/1.2.0
+   bowtie/1.3.0
+   bowtie/1.3.1
+   bowtie2/2.3.2
+   bowtie2/2.4.2
+   bowtie2/2.4.4
+   busco/5.0.0
+   busco/5.3.0
+   bustools/0.39.3
+   bwa-mem2/2.1
+   bwa/intel/0.7.17
+   cafe5/intel/5.0
+   cagee/intel/1.0
+   campari/intel/4.0
+   canu/2.1.1
+   canu/2.2
+   castep/25.1.1
+   cdhit/intel/4.8.1
+   cdo/intel/1.9.10
+   cell-acdc/1.4.27
+   cellranger-atac/2.1.0
+   cellranger/5.0.1
+   cellranger/6.0.1
+   cellranger/7.0.0
+   cellranger/7.1.0
+   cells2stats/1.0.0
+   celseq2/0.5.3.3
+   cfitsio/intel/4.2.0
+   chameleon/openmpi/intel/1.2.0
+   chameleon/openmpi/intel/20231205
+   charm/7.0.9
+   charmm/openmpi/intel/46b2
+   checkm/1.1.3
+   cmake/3.18.4
+   cmake/3.22.2
+   cmake/3.28.0
+   code-server/4.93.1
+   coinhsl/intel/2019.05.21
+   comsol/5.6.0.280
+   comsol/5.6.0.341
+   comsol/6.0
+   comsol/6.1
+   comsol/6.2
+   comsol/6.3
+   corenlp/4.2.0
+   coreutils/9.1
+   cp2k/openmpi/intel/20201212
+   cplex/20.1.0
+   cpmd/openmpi/intel/3.17.1
+   cpmd/openmpi/intel/4.3
+   cuda/10.2.89
+   cuda/11.0.194
+   cuda/11.1.74
+   cuda/11.3.1
+   cuda/11.6.2
+   cudnn/8.6.0.163-cuda11
+   cufflinks/2.2.1
+   cutadapt/3.1
+   cutadapt/4.9
+   deeptools/3.5.0
+   deml/1.1.4
+   di-tector/0.6
+   dotnet/2.1.814
+   dragon/intel/1.0
+   dssp/intel/3.1.4
+   dynare/intel/4.6.3
+   eccodes/intel/2.20.0
+   edgecase/20210227
+   edirect/20210122
+   edirect/20250218
+   egglib/3.1.0
+   eigen/3.3.9
+   eigen/3.4.0
+   eigensoft/3.0
+   elpa/openmpi/intel/2020.05.001
+   emacs/27.1
+   emboss/intel/6.6.0
+   enzo-e/openmpi/intel/1.0
+   espeak/1.48.04
+   expansion-hunter/5.0.0
+   fastani/1.33
+   fastp/intel/0.20.1
+   fastqc/0.11.9
+   faststructure/intel/1.0
+   fasttree/intel/2.1.11
+   fastx_toolkit/gcc/0.0.14
+   ffmpeg/4.2.4
+   fftw/intel/3.3.9
+   fftw/openmpi/intel/2.1.5
+   fftw/openmpi/intel/3.3.9
+   fiji/2.15.1
+   filezilla/3.58.0
+   fitseq2/20241219
+   flex/gcc/2.6.4
+   freesurfer/6.0.0
+   freesurfer/7.4.1
+   fsl/5.0.10
+   fsl/5.0.9
+   fsl/6.0.2
+   gangstr/intel/2.5.0
+   gatk/3.8-0
+   gatk/4.1.7.0
+   gatk/4.1.9.0
+   gatk/4.2.0.0
+   gatk/4.2.4.1
+   gatk/4.3.0.0
+   gaussian/intel/g09e01
+   gaussian/intel/g16a03
+   gaussian/intel/g16c01
+   gaussian/intel/g16c01-20241122
+   gaussview/6.0.16
+   gcc/10.2.0
+   gem/3.3
+   gemma/0.98.4
+   genometools/intel/1.6.1
+   ghc/8.10.3
+   git/2.31.0
+   global-arrays/openmpi/intel/5.8.1
+   global-arrays/openmpi/intel/ilp64/5.8.2
+   gloo/20201027
+   gmap/intel/20201217
+   gmp/gcc/6.2.1
+   gnuplot/gcc/5.4.1
+   go/1.15.2
+   go/1.15.7
+   go/1.16.3
+   go/1.16.7
+   go/1.17.5
+   go/1.18.3
+   go/1.20
+   go/1.20.4
+   go/1.21.3
+   google-chrome/87.0.4280.88
+   google-cloud-sdk/357.0.0
+   google-cloud-sdk/379.0.0
+   googletest/1.10.0
+   grace/intel/5.1.25
+   grackle/intel/3.2.1
+   graphviz/8.1.0
+   gromacs-plumed/openmpi/intel/2020.4
+   gromacs-plumed/openmpi/intel/2022.3
+   gromacs-plumed/openmpi/intel/2023.0
+   gromacs/openmpi/intel/4.5.6
+   gromacs/openmpi/intel/2018.3
+   gromacs/openmpi/intel/2020.4
+   gromacs/openmpi/intel/2023.3
+   gsl/intel/2.6
+   guppy/4.4.0_cpu
+   guppy/4.4.0_gpu
+   guppy/4.5.2_cpu
+   guppy/4.5.2_gpu
+   guppy/6.2.1_cpu
+   guppy/6.2.1_gpu
+   gurobi/9.1.1
+   gurobi/9.5.0
+   gurobi/9.5.2
+   gurobi/10.0.0
+   gurobi/11.0.0
+   hadoop/3.3.0
+   hdf5/intel/1.12.0
+   hdf5/openmpi/intel/1.12.0
+   hicpro/2.11.4
+   hifiasm/0.15.5
+   hifiasm/0.16.0
+   hifiasm/0.19.9-r616
+   hifiasm/0.20.0-r639
+   hifiasm/intel/0.19.8-r602
+   hifiasm/intel/0.19.9-r616
+   hisat-3n/20231120
+   hisat2/2.2.1
+   hmmer/intel/3.3.2
+   homer/4.11
+   hoomd/cuda/openmpi/intel/2.9.3
+   htseq/0.13.5
+   htslib/intel/1.11.0
+   htslib/intel/1.12
+   htslib/intel/1.14
+   htslib/intel/1.19.1
+   htslib/intel/1.20
+   hwloc/intel/2.5.0
+   hyphy/intel/2.5.24
+   igv/2.9.2
+   ikiss/1.4.0
+   imagej/1.53
+   imagemagick/intel/7.0.10
+   infernal/intel/1.1.4
+   intel/19.1.2
+   intel/2023.1.0
+   interop/1.1.12
+   interproscan/5.50
+   iqtree/1.6.12
+   isca/py3.8.6
+   jasper/intel/2.0.25
+   jbrowse/1.16.10/desktop
+   jbrowse/1.16.10/web
+   jbrowse2/1.6.5
+   jdk/1.8.0_271
+   jdk/11.0.9
+   jdk/20.0.2
+   jellyfish/2.3.0
+   julia/1.5.3
+   julia/1.6.1
+   jvarkit/base
+   jvarkit/2021.10.13
+   kallisto/0.46.1
+   kallisto/0.50.1
+   kent/385
+   knitro/12.2.2
+   knitro/12.3.0
+   knitro/12.4.0
+   knitro/13.0.0
+   knitro/13.1.0
+   knitro/13.2.0
+   knitro/14.0.0
+   knitro/14.1.0
+   kraken2/intel/2.1.2
+   ksnp4/20221204
+   lammps/openmpi/intel/20210831
+   lammps/openmpi/intel/20231214
+   lcms2/intel/2.12
+   lftp/4.9.2
+   libgtextutils/gcc/0.7
+   libint-cp2k/intel/2.6.0
+   libsamplerate/intel/0.2.1
+   libsndfile/intel/1.0.31
+   libxc/intel/4.3.4
+   libxc/intel/6.2.2
+   libxml2/intel/2.9.10
+   libxslt/intel/1.1.34
+   libxsmm/intel/1.16.1
+   liftoff/1.6.1
+   liftoff/1.6.3
+   llvm/11.0.0
+   lofreq/2.1.5
+   lp_solve/intel/5.5.2.9
+   lua/5.3.6
+   macs2/2.1.1.20160309
+   macs2/intel/2.2.7.1
+   macs3/intel/3.0.0a5
+   mafft/intel/7.475
+   mambaforge/23.1.0
+   mapdia/gcc/2.2.0
+   maple/2021.2
+   maple/2022.2
+   maple/2023.0
+   maple/2023.2
+   maple/2025.0
+   mathematica/12.1.1
+   mathematica/13.0.0
+   mathematica/13.1.0
+   mathematica/13.2.0
+   mathematica/14.0.0
+   mathematica/14.1.0
+   matio/intel/1.5.19
+   matlab/2020b
+   matlab/2021a
+   matlab/2021b
+   matlab/2022a
+   matlab/2022b
+   matlab/2023a
+   matlab/2023b
+   matlab/2024a
+   matlab/2024b
+   matlab/2024bu2
+   maxquant/1.6.17.0
+   mcl/intel/14-137
+   mcscanx/20210824
+   medaka/1.2.2
+   mega/11.0.11
+   megalodon/2.2.10
+   meme/openmpi/intel/5.3.0
+   metashape/2.0.1
+   metis/intel/5.1.0
+   miniasm/0.3
+   minimap2/2.17
+   minimap2/2.22
+   mmvec/1.0.3
+   molden/6.9
+   mono/gcc/6.12.0.114
+   mosdepth/0.3.1
+   mosh/1.3.2
+   mpfr/gcc/4.1.0
+   multiqc/1.9
+   multiqc/1.17
+   multiqc/1.27
+   multiwfn/3.8-dev
+   mummer/3.23
+   mummer/intel/4.0.0rc1
+   muscle/intel/3.8.1551
+   mvapich2/intel/2.3.4
+   mvapich2/intel/2.3.5
+   mysql/8.0.22
+   mysqlplusplus/intel/3.2.5
+   namd/2.14
+   namd/2.15a1-avx512
+   nbo/intel/6.0
+   nbo/intel/7.0.10
+   ncbi-cxx-toolkit/intel/22.0.0
+   nccl/cuda10.2/2.7.8
+   nccl/cuda11.1/2.8.4
+   nccl/cuda11.6/2.12.12
+   ncftp/3.2.6
+   nco/intel/4.9.7
+   ncview/intel/2.1.7
+   neat/2.0
+   neat/2.1
+   neat/3.0
+   neovim/0.9.5
+   netcdf-c/intel/4.7.4
+   netcdf-fortran/intel/4.5.3
+   netlogo/6.3.0
+   netpbm/10.82.00
+   nextflow/20.07.1
+   nextflow/20.10.0
+   nextflow/20.11.0-edge
+   nextflow/21.04.3
+   nextflow/21.10.5
+   nextflow/21.10.6
+   nextflow/23.04.1
+   nextflow/23.10.4
+   nextflow/24.04.0
+   nextflow/24.04.3
+   nextflow/24.10.3
+   nextflow/24.10.4
+   nfft/3.5.3
+   ngmlr/0.2.7
+   ngs/intel/2.10.9
+   ngsadmix/intel/20210224
+   ngsrelate/intel/20210103
+   numactl/2.0.15
+   nwchem/openmpi/7.2.2
+   nwchem/openmpi/intel/7.2.0
+   octopus/openmpi/intel/20240311
+   octopus/openmpi/intel/20240323
+   onetbb/intel/2020.3
+   onetbb/intel/2021.1.1
+   openbabel/intel/3.1.1
+   openjdk/1.8.0
+   openjdk/11.0.22
+   openjdk/20.0.2
+   openjdk/21.0.3
+   openjpeg/intel/2.4.0
+   openmpi/gcc/3.1.4
+   openmpi/gcc/4.0.5
+   openmpi/gcc/4.1.6
+   openmpi/intel/4.0.5
+   openmpi/intel/4.1.1
+   orca/4.2.1
+   orca/5.0.2
+   orca/6.0.0
+   orca/6.0.1
+   orthofinder/2.5.4
+   ovito/3.7.2
+   ovito/3.7.11
+   paircoil2/20210824
+   pandoc/2.11.3.2
+   parabricks/4.3.1
+   parallel/20201022
+   paraview/5.11.0
+   pb_assembly/0.0.8
+   pbzip2/1.1.13
+   pdb2pqr/3.1.0
+   pdflib/intel/7.0.5p3
+   perl/intel/5.32.0
+   pheniqs/1.1.0
+   pheniqs/2.0.6
+   pheniqs/2.1.0
+   phyg/1.2
+   phykit/1.11.14
+   phylomcl/2.0
+   picard/2.17.11
+   picard/2.23.8
+   picard/2.27.5
+   pilon/1.24
+   pio/openmpi/intel/2.6.1
+   plink/1.90b6.21
+   plink2/20210103
+   plink2/20230417
+   plumed/openmpi/intel/2.7.0
+   plumed/openmpi/intel/2.7.1
+   plumed/openmpi/intel/2.8.1
+   plumed/openmpi/intel/2.8.3
+   pnetcdf/openmpi/intel/1.12.1
+   portcullis/1.2.2
+   postgresql/intel/13.2
+   preseq/3.1.2
+   primerjinn/1.0.3
+   prodigal/intel/2.6.3
+   proj/intel/7.2.1
+   psonic/20210909
+   pybigwig/0.3.17
+   pycoqc/2.5.2
+   pyfaidx/0.5.9.1
+   pyfaidx/0.6.3.1
+   pymol/3.1.3
+   pypairix/0.3.7
+   pysam/0.16.0.1
+   pyspark/2.4.7
+   python/intel/3.8.6
+   qualimap/2.2.1
+   quantum-espresso/openmpi/intel/6.8
+   quantum-espresso/openmpi/intel/7.3.1
+   quarto/1.6.42
+   r/gcc/4.0.3
+   r/gcc/4.0.4
+   r/gcc/4.1.0
+   r/gcc/4.1.2
+   r/gcc/4.2.0
+   r/gcc/4.3.1
+   r/gcc/4.3.3
+   r/gcc/4.4.0
+   r/gcc/4.5.0
+   r/intel/4.0.3
+   r/intel/4.0.4
+   raxml-ng/openmpi/intel/1.0.1
+   raxml/intel/8.2.12
+   rclone/1.60.1
+   rclone/1.66.0
+   rclone/1.68.2
+   reform/1
+   reform/1.1.0
+   regtools/0.5.2
+   repeatmasker/4.1.2
+   reseq/1.1-devel
+   revbayes/openmpi/1.2.4
+   root-cern/intel/6.22.06
+   rosetta/openmpi/intel/2020.46.61480
+   rsem/intel/1.3.3
+   rstudio/1.4.1103
+   rubberband/intel/1.9.1
+   salmon/0.8.0
+   salmon/1.4.0
+   salmon/1.10.0
+   samblaster/0.1.26
+   samclip/0.4.0
+   samtools/intel/1.11
+   samtools/intel/1.12
+   samtools/intel/1.14
+   samtools/intel/1.20
+   sas/9.4m8
+   sbt/1.6.2
+   schrodinger/2021-1
+   schrodinger/2022.4
+   schrodinger/2023.1
+   schrodinger/2023.2
+   schrodinger/2023.4
+   schrodinger/2024.1
+   schrodinger/2024.3
+   schrodinger/2024.4
+   sdtrimsp/intel/2.05
+   seqkit/2.8.2
+   sfml/2.5.1
+   singularity-ce/3.9.2
+   singularity-ce/3.10.0
+   singularity-ce/3.11.0
+   singularity-ce/4.0.1
+   singularity/3.7.1
+   singularity/3.7.3
+   singularity/3.7.4
+   slim/4.1
+   slim/4.3
+   slim/intel/3.7.1
+   smalt/intel/0.7.6
+   smrtlink/7.0.1
+   snakemake/5.31.1
+   snakemake/6.12.3
+   sniffles/1.0.12
+   sniffles/2.0.6
+   snippy/4.6.0
+   snpeff/4.3t
+   snpeff/4.3u-devel
+   spades/3.15.0
+   spark/2.4.7
+   sparsehash/2.0.4
+   spglib/intel/2.3.1
+   sqlite/intel/3.34.0
+   sra-tools/2.10.9
+   sra-tools/3.1.0
+   stack/2.5.1
+   stacks/intel/2.55
+   star/intel/2.7.6a
+   star/intel/2.7.11a
+   starpu/openmpi/intel/20230822
+   stata/16.1
+   stata/17.0
+   stata/18.0
+   snpeff/4.3u-devel
+   spades/3.15.0
+   spark/2.4.7
+   sparsehash/2.0.4
+   spglib/intel/2.3.1
+   sqlite/intel/3.34.0
+   sra-tools/2.10.9
+   sra-tools/3.1.0
+   stack/2.5.1
+   stacks/intel/2.55
+   star/intel/2.7.6a
+   star/intel/2.7.11a
+   starpu/openmpi/intel/20230822
+   stata/16.1
+   stata/17.0
+   stata/18.0
+   stringtie/2.1.4
+   stringtie/2.1.6
+   stringtie/intel/1.3.5
+   subread/intel/2.0.1
+   suitesparse/intel/5.8.1
+   szip/intel/2.1.1
+   tnt/1.5
+[ac10596@log-1 ngs.week11]$ nano task1.sh
+[ac10596@log-1 ngs.week11]$ sbatch task1.sh
+Submitted batch job 59699538
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59699538 short,cs,     hw10  ac10596 PD       0:00      1 (Priority)
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[ac10596@log-1 ngs.week11]$ ls
+ERR156634_1_clean.filt.fastq.gz  ngs_hw10.sh.save    SRR7207011  task2.sh.save
+ERR156634_2_clean.filt.fastq.gz  slurm-59692524.out  SRR7207017  task3.sh
+fastp.html                       slurm-59698129.out  SRR7207089  task4.sh
+fastp.json                       slurm-59698300.out  task1.sh
+less                             slurm-59699538.out  task2.sh
+[ac10596@log-1 ngs.week11]$ sbatch task2.sh
+Submitted batch job 59700019
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       0:51      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       0:54      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       1:42      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       1:43      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       2:37      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       2:39      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       3:35      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       3:36      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       3:44      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       3:45      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       3:54      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       3:55      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59700019     short slurm_te  ac10596  R       4:38      1 cm029
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[ac10596@log-1 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+[ac10596@log-1 ngs.week11]$ ls
+ERR156634_1_clean.filt.fastq.gz  slurm-59698129.out  task1.sh
+ERR156634_2_clean.filt.fastq.gz  slurm-59698300.out  task2.sh
+fastp.html                       slurm-59699538.out  task2.sh.save
+fastp.json                       slurm-59700019.out  task3.sh
+less                             SRR7207011          task4.sh
+ngs_hw10.sh.save                 SRR7207017
+slurm-59692524.out               SRR7207089
+[ac10596@log-1 ngs.week11]$ sbatch task3.sh
+sbatch: error:  
+sbatch: error: Remind: Projects are now in place and will become mandatory starting September 15, 2024. After this date, Tandon HPC users will not be able to access HPC resources without a project ID. Please ensure you have the appropriate project ID by then to avoid any disruptions. Researchers can request their Project ID from their PI. PIs can register projects by going to https://projects.rit.nyu.edu/
+sbatch: error: If you need more information about Tandon HPC projects or require assistance, please send an email to soehelpdesk@nyu.edu for help
+sbatch: error: Please provide slurm account --account=pr_XXX
+sbatch: error:  
+sbatch: error: Batch job submission failed: Unspecified error
+[ac10596@log-1 ngs.week11]$ sbatch task3.sh
+sbatch: error:  
+sbatch: error: Remind: Projects are now in place and will become mandatory starting September 15, 2024. After this date, Tandon HPC users will not be able to access HPC resources without a project ID. Please ensure you have the appropriate project ID by then to avoid any disruptions. Researchers can request their Project ID from their PI. PIs can register projects by going to https://projects.rit.nyu.edu/
+sbatch: error: If you need more information about Tandon HPC projects or require assistance, please send an email to soehelpdesk@nyu.edu for help
+sbatch: error: Please provide slurm account --account=pr_XXX
+sbatch: error:  
+sbatch: error: Batch job submission failed: Unspecified error
+[ac10596@log-1 ngs.week11]$ srun --account=pr_284_general --time=4:00:00 --mem=4GB --pty /bin/bash
+srun: job 59700151 queued and waiting for resources
+srun: job 59700151 has been allocated resources
+^[[A^[[A^[[B[ac10596@cm001 nano task3.sh
+bash: ano: command not found
+[ac10596@cm001 ngs.week11]$ sbatch task3.sh
+sbatch: error:  
+sbatch: error: Remind: Projects are now in place and will become mandatory starting September 15, 2024. After this date, Tandon HPC users will not be able to access HPC resources without a project ID. Please ensure you have the appropriate project ID by then to avoid any disruptions. Researchers can request their Project ID from their PI. PIs can register projects by going to https://projects.rit.nyu.edu/
+sbatch: error: If you need more information about Tandon HPC projects or require assistance, please send an email to soehelpdesk@nyu.edu for help
+sbatch: error: Please provide slurm account --account=pr_XXX
+sbatch: error:  
+sbatch: error: Batch job submission failed: Unspecified error
+[ac10596@cm001 ngs.week11]$ srun --account=pr_284_general --time=4:00:00 --mem=4GB --pty /bin/bash
+srun: Job 59700151 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Job 59700151 step creation still disabled, retrying (Requested nodes are busy)
+client_loop: send disconnect: Broken pipe
+(base) amycui@a-10-27-13-131 ~ % ssh ac10596@greene.hpc.nyu.edu
+(ac10596@greene.hpc.nyu.edu) Password: 
+
+Last login: Wed Apr 23 16:09:57 2025 from 10.27.12.23
+[ac10596@log-3 ~]$ srun --account=pr_284_general --time=4:00:00 --mem=4GB --pty /bin/bash
+srun: job 59701325 queued and waiting for resources
+srun: job 59701325 has been allocated resources
+[ac10596@cm001 ~]$ sbatch task3.sh
+sbatch: error: Unable to open file task3.sh
+[ac10596@cm001 ~]$ srun --account=pr_284_general --time=4:00:00 --mem=4GB --pty /bin/bashsbatch
+^Csrun: Cancelled pending job step with signal 2
+srun: error: Unable to create step for job 59701325: Job/step already completing or completed
+[ac10596@cm001 ~]$ cd $SCRATCH/ngs.week11
+[ac10596@cm001 ngs.week11]$ sbatch task3.sh
+sbatch: error:  
+sbatch: error: Remind: Projects are now in place and will become mandatory starting September 15, 2024. After this date, Tandon HPC users will not be able to access HPC resources without a project ID. Please ensure you have the appropriate project ID by then to avoid any disruptions. Researchers can request their Project ID from their PI. PIs can register projects by going to https://projects.rit.nyu.edu/
+sbatch: error: If you need more information about Tandon HPC projects or require assistance, please send an email to soehelpdesk@nyu.edu for help
+sbatch: error: Please provide slurm account --account=pr_XXX
+sbatch: error:  
+sbatch: error: Batch job submission failed: Unspecified error
+[ac10596@cm001 ngs.week11]$ nano task3.sh
+[ac10596@cm001 ngs.week11]$ srun --account=pr_284_general --time=4:00:00 --mem=4GB --pty /bin/bashsbatch
+^Csrun: Cancelled pending job step with signal 2
+srun: error: Unable to create step for job 59701325: Job/step already completing or completed
+[ac10596@cm001 ngs.week11]$ srun --account=pr_284_general --time=4:00:00 --mem=4GB --pty /bin/bashsbatch
+client_loop: send disconnect: Broken pipe
+(base) amycui@a-10-27-13-131 ~ % ssh ac10596@greene.hpc.nyu.edu
+(ac10596@greene.hpc.nyu.edu) Password: 
+
+Last login: Sun Mar 16 23:28:05 2025 from 10.27.70.81
+[ac10596@log-2 ~]$ srun --account=pr_284_general --time=4:00:00 --mem=4GB --pty /bin/bash
+srun: job 59703265 queued and waiting for resources
+srun: job 59703265 has been allocated resources
+[ac10596@cm001 ~]$ sbatch task3.sh
+sbatch: error: Unable to open file task3.sh
+[ac10596@cm001 ~]$ cd $SCRATCH/ngs.week11
+[ac10596@cm001 ngs.week11]$ ls
+ERR156634_1_clean.filt.fastq.gz  slurm-59698129.out  task1.sh
+ERR156634_2_clean.filt.fastq.gz  slurm-59698300.out  task2.sh
+fastp.html                       slurm-59699538.out  task2.sh.save
+fastp.json                       slurm-59700019.out  task3.sh
+less                             SRR7207011          task4.sh
+ngs_hw10.sh.save                 SRR7207017
+slurm-59692524.out               SRR7207089
+[ac10596@cm001 ngs.week11]$ nano task3.sh
+[ac10596@cm001 ngs.week11]$ sbatch task3.sh
+sbatch: error:  
+sbatch: error: Remind: Projects are now in place and will become mandatory starting September 15, 2024. After this date, Tandon HPC users will not be able to access HPC resources without a project ID. Please ensure you have the appropriate project ID by then to avoid any disruptions. Researchers can request their Project ID from their PI. PIs can register projects by going to https://projects.rit.nyu.edu/
+sbatch: error: If you need more information about Tandon HPC projects or require assistance, please send an email to soehelpdesk@nyu.edu for help
+sbatch: error: Please provide slurm account --account=pr_XXX
+sbatch: error:  
+sbatch: error: Batch job submission failed: Unspecified error
+[ac10596@cm001 ngs.week11]$ nano task3.sh
+[ac10596@cm001 ngs.week11]$ nano task3.sh
+[ac10596@cm001 ngs.week11]$ sbatch task3.sh
+Submitted batch job 59703332
+[ac10596@cm001 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59703332        cs slurm_te  ac10596  R       1:52      1 cs016
+          59703265     short     bash  ac10596  R       6:54      1 cm001
+[ac10596@cm001 ngs.week11]$ ls
+ERR156634_1_clean.filt.fastq.gz  slurm-59698129.out  SRR7207089
+ERR156634_2_clean.filt.fastq.gz  slurm-59698300.out  task1.sh
+fastp.html                       slurm-59699538.out  task2.sh
+fastp.json                       slurm-59700019.out  task2.sh.save
+less                             slurm-59703332.out  task3.sh
+ngs_hw10.sh.save                 SRR7207011          task4.sh
+slurm-59692524.out               SRR7207017
+[ac10596@cm001 ngs.week11]$ nano task1.sh
+[ac10596@cm001 ngs.week11]$ nano task2.sh
+[ac10596@cm001 ngs.week11]$ nano task3.sh
+[ac10596@cm001 ngs.week11]$ squeue -u ac10596
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          59703332        cs slurm_te  ac10596  R      13:51      1 cs016
+          59703265     short     bash  ac10596  R      18:53      1 cm001
+[ac10596@cm001 ngs.week11]$ nano task4.sh
+
+  GNU nano 5.6.1                       task4.sh                       Modified  
+#!/bin/bash
+#
+#SBATCH --nodes=1
+#SBATCH --tasks-per-node=1
+#SBATCH --cpus-per-task=1
+#SBATCH --time=2:00:00
+#SBATCH --mem=4GB
+#SBATCH --job-name=task4
+#SBATCH --account=pr_284_general
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=ac10596@nyu.edu
+
+module purge
+
+module load macs3/intel/3.0.0a5
+
+#MACS3 callpeak for SRR7207017 
+macs3 callpeak \
+    -t SRR7207011/SRR7207011.sorted.q20.bam \
+    -c SRR7207089/SRR7207089.sorted.q20.bam \
+
+^G Help      ^O Write Out ^W Where Is  ^K Cut       ^T Execute   ^C Location
+^X Exit      ^R Read File ^\ Replace   ^U Paste     ^J Justify   ^_ Go To Line

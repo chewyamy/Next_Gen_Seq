@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red56\green185\blue199;\red0\green0\blue0;\red57\green192\blue38;
+\red219\green39\blue218;\red202\green51\blue35;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c25546\c77007\c82023;\csgray\c0;\cssrgb\c25706\c77963\c19557;
+\cssrgb\c89513\c29736\c88485;\cssrgb\c83899\c28663\c18026;\csgray\c100000;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Task 2:\
+\
+#!/bin/bash\cf3 \
+\cf2 #\cf3 \
+\cf2 #SBATCH --nodes=1\cf3 \
+\cf2 #SBATCH --tasks-per-node=1\cf3 \
+\cf2 #SBATCH --cpus-per-task=1\cf3 \
+\cf2 #SBATCH --time=4:00:00\cf3 \
+\cf2 #SBATCH --mem=4GB\cf3 \
+\cf2 #SBATCH --job-name=slurm_template\cf3 \
+\cf2 #SBATCH --account=pr_284_general\cf3 \
+\cf2 #SBATCH --mail-type=FAIL\cf3 \
+\cf2 #SBATCH --mail-user=ac10596@nyu.edu\cf3 \
+\
+module purge\
+\
+module load fastp/intel/0.20.1\
+\cf4 for\cf3  sra \cf4 in\cf3  SRR7207011 SRR7207017 SRR7207089\
+\cf4 do\cf3 \
+   \cf2  # Run fastp with length requirement of 50\cf3 \
+    fastp
+\f1\b \cf5  -i
+\f0\b0 \cf3  
+\f1\b \cf6 $\{sra\}
+\f0\b0 \cf3 /
+\f1\b \cf6 $\{sra\}
+\f0\b0 \cf3 .fastq
+\f1\b \cf5  -o
+\f0\b0 \cf3  
+\f1\b \cf6 $\{sra\}
+\f0\b0 \cf3 /
+\f1\b \cf6 $\{sra\}
+\f0\b0 \cf3 .trimmed.fastq --length_requir\cf7 \cb3 >\cf3 \cb1 \
+\cf4 done\cf3 \
+}

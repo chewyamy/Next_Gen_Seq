@@ -1,0 +1,210 @@
+Search Results:
+ds:H00014	Non-small cell lung cancer
+
+
+Detailed Info:
+ENTRY       H00014                      Disease
+NAME        Non-small cell lung cancer
+  SUPERGRP  Solid tumor [DS:H02421]
+DESCRIPTION Lung cancer is a leading cause of cancer death among men and women in industrialized countries. Non-small-cell lung cancer (NSCLC) accounts for approximately 85% of lung cancer and represents a heterogeneous group of cancers, consisting mainly of squamous cell (SCC), adeno (AC) and large-cell carcinoma. Molecular mechanisms altered in NSCLC include activation of oncogenes, such as K-RAS, EGFR and EML4-ALK, and inactivation of tumorsuppressor genes, such as p53, p16INK4a, RAR-beta, and RASSF1. Point mutations within the K-RAS gene inactivate GTPase activity and the p21-RAS protein continuously transmits growth signals to the nucleus. Mutations or overexpression of EGFR leads to a proliferative advantage. EML4-ALK fusion leads to constitutive ALK activation, which causes cell proliferation, invasion, and inhibition of apoptosis. Inactivating mutation of p53 can lead to more rapid proliferation and reduced apoptosis. The protein encoded by the p16INK4a inhibits formation of CDK-cyclin-D complexes by competitive binding of CDK4 and CDK6. Loss of p16INK4a expression is a common feature of NSCLC. RAR-beta is a nuclear receptor that bears vitamin-A-dependent transcriptional activity. RASSF1A is able to form heterodimers with Nore-1, an RAS effector. Therefore loss of RASSF1A might shift the balance of RAS activity towards a growth-promoting effect.
+CATEGORY    Cancer
+BRITE       Human diseases in ICD-11 classification [BR:br08403]
+             02 Neoplasms
+              Malignant neoplasms, except primary neoplasms of lymphoid, haematopoietic, central nervous system or related tissues
+               Malignant neoplasms, stated or presumed to be primary, of specified sites, except of lymphoid, haematopoietic, central nervous system or related tissues
+                Malignant neoplasms of middle ear, respiratory or intrathoracic organs
+                 2C25  Malignant neoplasms of bronchus or lung
+                  H00014  Non-small cell lung cancer
+            Pathway-based classification of diseases [BR:br08402]
+             Signal transduction
+              nt06526  MAPK signaling
+               H00014  Non-small cell lung cancer
+              nt06528  Calcium signaling
+               H00014  Non-small cell lung cancer
+             Cellular process
+              nt06512  Chromosome cohesion and segregation
+               H00014  Non-small cell lung cancer
+            Tumor markers [br08442.html]
+             H00014
+            Cancer-associated carbohydrates [br08441.html]
+             H00014
+DIS_PATHWAY hsa05223  Non-small cell lung cancer
+PATHWAY     hsa04020(N01641)  Calcium signaling pathway
+NETWORK     nt06266 Non-small cell lung cancer
+            nt06512(H00014) Chromosome cohesion and segregation
+            nt06528(H00014) Calcium signaling
+GENE        EML4-ALK (translocation) [HSA:238] [KO:K05119]
+            CD74-ROS1,SLC34A2-ROS1 (translocation) [HSA:6098] [KO:K05088]
+            KIF5B-RET (inversion) [HSA:5979] [KO:K05126]
+            RARB (promoter hypermethylation) [HSA:5915] [KO:K08528]
+            RASSF1 (promoter hypermethylation) [HSA:11186] [KO:K09850]
+            KRAS [HSA:3845] [KO:K07827]
+            EGFR [HSA:1956] [KO:K04361]
+            FHIT [HSA:2272] [KO:K01522]
+            CDKN2A [HSA:1029] [KO:K06621]
+            TP53 [HSA:7157] [KO:K04451]
+            MET [HSA:4233] [KO:K05099]
+            BRAF [HSA:673] [KO:K04365]
+            PIK3CA [HSA:5290] [KO:K00922]
+            IRF1 [HSA:3659] [KO:K09444]
+            PPP2R1B [HSA:5519] [KO:K03456]
+DRUG        Methotrexate sodium [DR:D02115]
+            Pemetrexed sodium hydrate [DR:D06503]
+            Gemcitabine hydrochloride [DR:D01155]
+            Vinorelbine tartrate [DR:D01935]
+            Paclitaxel [DR:D00491]
+            Docetaxel [DR:D07866]
+            Docetaxel [DR:D02165]
+            Gefitinib [DR:D01977] (EGFR mutation positive)
+            Erlotinib hydrochloride [DR:D04023] (EGFR mutation positive)
+            Afatinib dimaleate [DR:D09733] (EGFR mutation positive)
+            Osimertinib mesylate [DR:D10766] (EGFR mutation positive)
+            Dacomitinib [DR:D10514] (EGFR mutation positive)
+            Lazertinib mesylate [DR:D12245]
+            Mobocertinib succinate [DR:D11969] (EGFR exon 20 insertion mutation)
+            Dabrafenib mesylate [DR:D10104] (BRAF mutation positive)
+            Crizotinib [DR:D09731] (ALK or ROS1-positive)
+            Ceritinib [DR:D10551] (ALK positive)
+            Alectinib hydrochloride [DR:D10450] (ALK positive)
+            Brigatinib [DR:D10866] (ALK positive)
+            Lorlatinib [DR:D11012] (ALK positive)
+            Trametinib dimethyl sulfoxide [DR:D10176] (BRAF mutation positive)
+            Entrectinib [DR:D10926] (ROS1-positive)
+            Capmatinib hydrochloride [DR:D10891] (MET exon 14 skipping positive)
+            Tepotinib hydrochloride [DR:D11073] (MET exon 14 skipping)
+            Selpercatinib [DR:D11713] (RET fusion positive)
+            Pralsetinib [DR:D11712] (RET fusion positive)
+            Repotrectinib [DR:D11454] (ROS1-positive)
+            Trastuzumab deruxtecan [DR:D11529] (HER2 mutant)
+            Necitumumab [DR:D10018]
+            Nivolumab [DR:D10316]
+            Pembrolizumab [DR:D10574] (PD-L1 expressed)
+            Durvalumab [DR:D10808]
+            Atezolizumab [DR:D10773]
+            Cemiplimab [DR:D11108]
+            Bevacizumab [DR:D06409]
+            Ramucirumab [DR:D09371]
+            Amivantamab [DR:D11894] (EGFR exon 20 insertion)
+            Tremelimumab [DR:D06657]
+            Sotorasib [DR:D12055] (KRAS G12C-mutated)
+            Adagrasib [DR:D12301] (KRAS G12C-mutated)
+            Ensartinib hydrochloride [DR:D11356] (ALK positive)
+            Zenocutuzumab [DR:D11991] (NRG1 fusion positive)
+DBLINKS     ICD-11: 2C25.0 2C25.2 2C25.3
+            ICD-10: C34
+            MeSH: D002289
+REFERENCE   PMID:12741677
+  AUTHORS   Yokota J, Nishioka M, Tani M, Kohno T.
+  TITLE     Genetic alterations responsible for metastatic phenotypes of lung cancer cells.
+  JOURNAL   Clin Exp Metastasis 20:189-93 (2003)
+            DOI:10.1023/a:1022978932215
+REFERENCE   PMID:12711111
+  AUTHORS   Sanchez-Cespedes M.
+  TITLE     Dissecting the genetic alterations involved in lung carcinogenesis.
+  JOURNAL   Lung Cancer 40:111-21 (2003)
+            DOI:10.1016/S0169-5002(03)00033-3
+REFERENCE   PMID:12407699
+  AUTHORS   Mitsuuchi Y, Testa JR.
+  TITLE     Cytogenetics and molecular genetics of lung cancer.
+  JOURNAL   Am J Med Genet 115:183-8 (2002)
+            DOI:10.1002/ajmg.10692
+REFERENCE   PMID:16112428
+  AUTHORS   Panani AD, Roussos C.
+  TITLE     Cytogenetic and molecular aspects of lung cancer.
+  JOURNAL   Cancer Lett 239:1-9 (2006)
+            DOI:10.1016/j.canlet.2005.06.030
+REFERENCE   PMID:15769940
+  AUTHORS   Meuwissen R, Berns A.
+  TITLE     Mouse models for human lung cancer.
+  JOURNAL   Genes Dev 19:643-64 (2005)
+            DOI:10.1101/gad.1284505
+REFERENCE   PMID:21850578
+  AUTHORS   Toyooka S, Mitsudomi T, Soh J, Aokage K, Yamane M, Oto T, Kiura K, Miyoshi S
+  TITLE     Molecular oncology of lung cancer.
+  JOURNAL   Gen Thorac Cardiovasc Surg 59:527-37 (2011)
+            DOI:10.1007/s11748-010-0743-3
+REFERENCE   PMID:23733083
+  AUTHORS   Koudelakova V, Kneblova M, Trojanec R, Drabek J, Hajduch M
+  TITLE     Non-small cell lung cancer--genetic predictors.
+  JOURNAL   Biomed Pap Med Fac Univ Palacky Olomouc Czech Repub 157:125-36 (2013)
+            DOI:10.5507/bp.2013.034
+REFERENCE   PMID:28443282
+  AUTHORS   Sundar R, Chenard-Poirier M, Collins DC, Yap TA
+  TITLE     Imprecision in the Era of Precision Medicine in Non-Small Cell Lung Cancer.
+  JOURNAL   Front Med (Lausanne) 4:39 (2017)
+            DOI:10.3389/fmed.2017.00039
+REFERENCE   PMID:17625570 (EML4-ALK translocation)
+  AUTHORS   Soda M, Choi YL, Enomoto M, Takada S, Yamashita Y, Ishikawa S, Fujiwara S, Watanabe H, Kurashina K, Hatanaka H, Bando M, Ohno S, Ishikawa Y, Aburatani H, Niki T, Sohara Y, Sugiyama Y, Mano H
+  TITLE     Identification of the transforming EML4-ALK fusion gene in non-small-cell lung cancer.
+  JOURNAL   Nature 448:561-6 (2007)
+            DOI:10.1038/nature05945
+REFERENCE   PMID:19406209 (CD74-ROS1,SLC34A2-ROS1  translocation)
+  AUTHORS   Brenner JC, Chinnaiyan AM
+  TITLE     Translocations in epithelial cancers.
+  JOURNAL   Biochim Biophys Acta 1796:201-15 (2009)
+            DOI:10.1016/j.bbcan.2009.04.005
+REFERENCE   PMID:22327623 (KIF5B-RET  inversion)
+  AUTHORS   Takeuchi K, Soda M, Togashi Y, Suzuki R, Sakata S, Hatano S, Asaka R, Hamanaka W, Ninomiya H, Uehara H, Lim Choi Y, Satoh Y, Okumura S, Nakagawa K, Mano H, Ishikawa Y
+  TITLE     RET, ROS1 and ALK fusions in lung cancer.
+  JOURNAL   Nat Med 18:378-81 (2012)
+            DOI:10.1038/nm.2658
+REFERENCE   PMID:18349282 (RARB promoter hypermethylation)
+  AUTHORS   Feng Q, Hawes SE, Stern JE, Wiens L, Lu H, Dong ZM, Jordan CD, Kiviat NB, Vesselle H
+  TITLE     DNA methylation in tumor and matched normal tissues from non-small cell lung cancer patients.
+  JOURNAL   Cancer Epidemiol Biomarkers Prev 17:645-54 (2008)
+            DOI:10.1158/1055-9965.EPI-07-2518
+REFERENCE   PMID:11333291 (RASSF1 promoter hypermethylation)
+  AUTHORS   Burbee DG, Forgacs E, Zochbauer-Muller S, Shivakumar L, Fong K, Gao B, Randle D, Kondo M, Virmani A, Bader S, Sekido Y, Latif F, Milchgrub S, Toyooka S, Gazdar AF, Lerman MI, Zabarovsky E, White M, Minna JD
+  TITLE     Epigenetic inactivation of RASSF1A in lung and breast cancers and malignant phenotype suppression.
+  JOURNAL   J Natl Cancer Inst 93:691-9 (2001)
+            DOI:10.1093/jnci/93.9.691
+REFERENCE   PMID:16533793 (KRAS)
+  AUTHORS   Tam IY, Chung LP, Suen WS, Wang E, Wong MC, Ho KK, Lam WK, Chiu SW, Girard L, Minna JD, Gazdar AF, Wong MP
+  TITLE     Distinct epidermal growth factor receptor and KRAS mutation patterns in non-small cell lung cancer patients with different tobacco exposure and clinicopathologic features.
+  JOURNAL   Clin Cancer Res 12:1647-53 (2006)
+            DOI:10.1158/1078-0432.CCR-05-1981
+REFERENCE   PMID:15118073 (EGFR)
+  AUTHORS   Lynch TJ, Bell DW, Sordella R, Gurubhagavatula S, Okimoto RA, Brannigan BW, Harris PL, Haserlat SM, Supko JG, Haluska FG, Louis DN, Christiani DC, Settleman J, Haber DA.
+  TITLE     Activating mutations in the epidermal growth factor receptor underlying responsiveness of non-small-cell lung cancer to gefitinib.
+  JOURNAL   N Engl J Med 350:2129-39 (2004)
+            DOI:10.1056/NEJMoa040938
+REFERENCE   PMID:8620533 (FHIT)
+  AUTHORS   Sozzi G, Veronese ML, Negrini M, Baffa R, Cotticelli MG, Inoue H, Tornielli S, Pilotti S, De Gregorio L, Pastorino U, Pierotti MA, Ohta M, Huebner K, Croce CM
+  TITLE     The FHIT gene 3p14.2 is abnormal in lung cancer.
+  JOURNAL   Cell 85:17-26 (1996)
+            DOI:10.1016/s0092-8674(00)81078-8
+REFERENCE   PMID:8060323 (CDKN2A)
+  AUTHORS   Hayashi N, Sugimoto Y, Tsuchiya E, Ogawa M, Nakamura Y
+  TITLE     Somatic mutations of the MTS (multiple tumor suppressor) 1/CDK4l (cyclin-dependent kinase-4 inhibitor) gene in human primary non-small cell lung carcinomas.
+  JOURNAL   Biochem Biophys Res Commun 202:1426-30 (1994)
+            DOI:10.1006/bbrc.1994.2090
+REFERENCE   PMID:2554494 (TP53)
+  AUTHORS   Takahashi T, Nau MM, Chiba I, Birrer MJ, Rosenberg RK, Vinocour M, Levitt M, Pass H, Gazdar AF, Minna JD
+  TITLE     p53: a frequent target for genetic abnormalities in lung cancer.
+  JOURNAL   Science 246:491-4 (1989)
+            DOI:10.1126/science.2554494
+REFERENCE   PMID:28502721 (MET)
+  AUTHORS   Lee GD, Lee SE, Oh DY, Yu DB, Jeong HM, Kim J, Hong S, Jung HS, Oh E, Song JY, Lee MS, Kim M, Jung K, Kim J, Shin YK, Choi YL, Kim HR
+  TITLE     MET Exon 14 Skipping Mutations in Lung Adenocarcinoma: Clinicopathologic Implications and Prognostic Values.
+  JOURNAL   J Thorac Oncol 12:1233-1246 (2017)
+            DOI:10.1016/j.jtho.2017.04.031
+REFERENCE   PMID:12460918 (BRAF)
+  AUTHORS   Brose MS, Volpe P, Feldman M, Kumar M, Rishi I, Gerrero R, Einhorn E, Herlyn M, Minna J, Nicholson A, Roth JA, Albelda SM, Davies H, Cox C, Brignell G, Stephens P, Futreal PA, Wooster R, Stratton MR, Weber BL
+  TITLE     BRAF and RAS mutations in human lung cancer and melanoma.
+  JOURNAL   Cancer Res 62:6997-7000 (2002)
+REFERENCE   PMID:15608678 (PIK3CA)
+  AUTHORS   Lee JW, Soung YH, Kim SY, Lee HW, Park WS, Nam SW, Kim SH, Lee JY, Yoo NJ, Lee SH
+  TITLE     PIK3CA gene is frequently mutated in breast carcinomas and hepatocellular carcinomas.
+  JOURNAL   Oncogene 24:1477-80 (2005)
+            DOI:10.1038/sj.onc.1208304
+REFERENCE   PMID:10395927 (IRF1)
+  AUTHORS   Eason DD, Shepherd AT, Blanck G
+  TITLE     Interferon regulatory factor 1 tryptophan 11 to arginine point mutation abolishes DNA binding.
+  JOURNAL   Biochim Biophys Acta 1446:140-4 (1999)
+            DOI:10.1016/s0167-4781(99)00078-0
+REFERENCE   PMID:9765152 (PPP2R1B)
+  AUTHORS   Wang SS, Esplin ED, Li JL, Huang L, Gazdar A, Minna J, Evans GA
+  TITLE     Alterations of the PPP2R1B gene in human lung and colon cancer.
+  JOURNAL   Science 282:284-7 (1998)
+            DOI:10.1126/science.282.5387.284
+///

@@ -1,0 +1,48 @@
+Last login: Mon Feb  3 12:50:48 on ttys002
+(base) amycui@a-10-27-3-236 ~ % ~/.ssh
+zsh: permission denied: /Users/amycui/.ssh
+(base) amycui@a-10-27-3-236 ~ % ls -ld ~/.ssh
+drwx------  3 amycui  staff  96 Jan 22 21:29 /Users/amycui/.ssh
+(base) amycui@a-10-27-3-236 ~ % chmod 700 ~/.ssh
+(base) amycui@a-10-27-3-236 ~ % nano ~/.ssh/config
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  UW PICO 5.09            File: /Users/amycui/.ssh/config             Modified  
+
+  StrictHostKeyChecking no
+  LocalForward 8027 greene.hpc.nyu.edu:22
+  UserKnownHostsFile /dev/null
+  User ac10596     
+  
+Host greene
+  HostName localhost
+  Port 8027
+  ForwardX11 yes
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+  LogLevel ERROR
+  User ac10596        
+  
+
+
+  
+  
+  
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos   
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Spell  

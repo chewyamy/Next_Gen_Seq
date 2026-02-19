@@ -1,0 +1,141 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red56\green185\blue199;\red57\green192\blue38;
+\red255\green255\blue255;\red86\green32\blue244;\red202\green51\blue35;\red219\green39\blue218;\red170\green171\blue37;
+}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c25546\c77007\c82023;\cssrgb\c25706\c77963\c19557;
+\csgray\c100000;\cssrgb\c41681\c25958\c96648;\cssrgb\c83899\c28663\c18026;\cssrgb\c89513\c29736\c88485;\cssrgb\c72331\c71682\c18599;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 \
+\
+\cf3 #!/bin/bash\cf2 \
+\cf3 #\cf2 \
+\cf3 #SBATCH --account=pr_284_general\cf2 \
+\cf3 #SBATCH --nodes=1\cf2 \
+\cf3 #SBATCH --tasks-per-node=1\cf2 \
+\cf3 #SBATCH --cpus-per-task=8\cf2 \
+\cf3 #SBATCH --time=24:00:00\cf2 \
+\cf3 #SBATCH --mem=28GB\cf2 \
+\cf3 #SBATCH --job-name=slurm_template\cf2 \
+\cf3 #SBATCH --mail-type=FAIL\cf2 \
+\cf3 #SBATCH --mail-user=jmf11@nyu.edu\cf2 \
+\
+\cf3 # Human reference genome (hg38) fasta - index files are in the hg38 directory\cf2 \
+ref\cf4 =\cf2 /scratch/work/courses/BI7653/hw3.2025/hg38/Homo_sapiens.GRCh38.dna_sm.prima\cf5 \cb2 >\cf2 \cb1 \
+\
+\cf4 for\cf2  sra \cf4 in\cf2  SRR7207011 SRR7207017 SRR7207089\
+\cf4 do\cf2 \
+\
+
+\f1\b \cf6 cd
+\f0\b0 \cf2  
+\f1\b \cf7 $sra
+\f0\b0 \cf2 \
+\
+module load bwa/intel/0.7.17\
+\
+\cf3 # align reads with bwa mem\cf2 \
+bwa mem
+\f1\b \cf8  -M -t
+\f0\b0 \cf2  
+\f1\b \cf7 $SLURM_CPUS_PER_TASK
+\f0\b0 \cf2  
+\f1\b \cf7 $ref
+\f0\b0 \cf2  
+\f1\b \cf7 $\{sra\}
+\f0\b0 \cf2 .trimmed.fastq \cf4 >\cf2  
+\f1\b \cf7 $\{sra\}
+\f0\b0 \cf2 .sam\
+
+\f1\b \cf6 echo
+\f0\b0 \cf2  _ESTATUS_ \cf4 [\cf2  
+\f1\b \cf7 $sra
+\f0\b0 \cf2  bwa mem \cf4 ]:\cf2  
+\f1\b \cf7 $?
+\f0\b0 \cf2 \
+\
+module purge\cf3  # purge modules to prevent unexpected module collisions\cf2 \
+\
+module load samtools/intel/1.14\
+samtools view -bh 
+\f1\b \cf7 $\{sra\}
+\f0\b0 \cf2 .sam \cf4 >\cf2  
+\f1\b \cf7 $\{sra\}
+\f0\b0 \cf2 .bam\
+module purge\
+\
+module load picard/2.27.5\
+\
+\cf3 # coordinate-sort reads\cf2 \
+\cf3 # note: Picard is a java archive (a java app) that we launch with java <args to\cf5 \cb2 >\cf2 \cb1 \
+\cf3 # note: the java runtime environment (JRE) can be configured to request a maxim\cf5 \cb2 >\cf2 \cb1 \
+\cf3 #       This is 2 GB less than we requested from the slurm scheduler to provide\cf5 \cb2 >\cf2 \cb1 \
+\
+java -Xmx26g -jar 
+\f1\b \cf7 $PICARD_JAR
+\f0\b0 \cf2  SortSam \cf4 \\\cf2 \
+INPUT\cf4 =
+\f1\b \cf7 $\{sra\}
+\f0\b0 \cf2 .bam \cf4 \\\cf2 \
+OUTPUT\cf4 =
+\f1\b \cf7 $\{sra\}
+\f0\b0 \cf2 .sorted.bam \cf4 \\\cf2 \
+SORT_ORDER\cf4 =\cf2 coordinate \cf4 \\\cf2 \
+TMP_DIR\cf4 =
+\f1\b \cf9 "$\{SLURM_JOBTMP\}"
+\f0\b0 \cf2  \cf4 \\\cf2 \
+MAX_RECORDS_IN_RAM\cf4 =\cf2 10000000 \cf4 \\\cf2 \
+VALIDATION_STRINGENCY\cf4 =\cf2 LENIENT\
+
+\f1\b \cf6 echo
+\f0\b0 \cf2  _ESTATUS_ \cf4 [\cf2  
+\f1\b \cf7 $sra
+\f0\b0 \cf2  coordinate-
+\f1\b \cf6 sort
+\f0\b0 \cf2  \cf4 ]:\cf2  
+\f1\b \cf7 $?
+\f0\b0 \cf2 \
+module purge\
+\
+module load samtools/intel/1.14\
+samtools index 
+\f1\b \cf7 $\{sra\}
+\f0\b0 \cf2 .sorted.bam\
+\
+\cf3 # remove reads with mapping quality < 20\cf2 \
+samtools view
+\f1\b \cf8  -h -q
+\f0\b0 \cf2  20
+\f1\b \cf8  -b
+\f0\b0 \cf2  
+\f1\b \cf7 $\{sra\}
+\f0\b0 \cf2 .sorted.bam \cf4 >\cf2  
+\f1\b \cf7 $\{sra\}
+\f0\b0 \cf2 .sorted.q20.bam\
+
+\f1\b \cf6 echo
+\f0\b0 \cf2  _ESTATUS_ \cf4 [\cf2  
+\f1\b \cf7 $sra
+\f0\b0 \cf2  samtools view
+\f1\b \cf8  -q
+\f0\b0 \cf2  20 
+\f1\b \cf7 $sra
+\f0\b0 \cf2  \cf4 ]:\cf2  
+\f1\b \cf7 $?
+\f0\b0 \cf2 \
+\
+\cf3 # create index file (.bai) for final coordinate-sorted, minimum mapping quality\cf5 \cb2 >\cf2 \cb1 \
+samtools index 
+\f1\b \cf7 $\{sra\}
+\f0\b0 \cf2 .sorted.q20.bam\
+module purge\
+\
+
+\f1\b \cf6 cd
+\f0\b0 \cf2  ..\
+\cf4 done\cf2 \
+\
+}

@@ -1,0 +1,5 @@
+Chr1    TAIR10  exon    3600    3900    .   +   .   gene_id "AT1G01010"; gene_name "AT1G01010";
+Chr1    TAIR10  exon    4000    4300    .   +   .   gene_id "AT1G01010"; gene_name "AT1G01010";
+Chr1    TAIR10  exon    4500    4800    .   +   .   gene_id "AT1G01010"; gene_name "AT1G01010";
+Chr2    TAIR10  exon    6400    6600    .   -   .   gene_id "AT2G01020"; gene_name "AT2G01020";
+Chr2    TAIR10  exon    7100    7300    .   -   .   gene_id "AT2G01020"; gene_name "AT2G01020";

@@ -1,0 +1,83 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2759
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red219\green39\blue218;\red56\green185\blue199;
+\red57\green192\blue38;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c89513\c29736\c88485;\cssrgb\c25546\c77007\c82023;
+\cssrgb\c25706\c77963\c19557;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0  
+\f1\b \cf3  \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\b0 \cf4 #!/bin/bash\cf2 \
+\cf4 #\cf2 \
+\cf4 #SBATCH --nodes=1\cf2 \
+\cf4 #SBATCH --tasks-per-node=1\cf2 \
+\cf4 #SBATCH --cpus-per-task=1\cf2 \
+\cf4 #SBATCH --time=2:00:00\cf2 \
+\cf4 #SBATCH --mem=4GB\cf2 \
+\cf4 #SBATCH --job-name=task4\cf2 \
+\cf4 #SBATCH --account=pr_284_general\cf2 \
+\cf4 #SBATCH --mail-type=FAIL\cf2 \
+\cf4 #SBATCH --mail-user=ac10596@nyu.edu\cf2 \
+\
+module purge\
+\
+module load macs3/intel/3.0.0a5\
+\
+\cf4 #MACS3 callpeak for SRR7207017\cf2 \
+macs3 callpeak \cf5 \\
+\f1\b \cf3 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf3 	-t
+\f0\b0 \cf2  SRR7207011/SRR7207011.sorted.q20.bam \cf5 \\\cf2 \
+   
+\f1\b \cf3  -c
+\f0\b0 \cf2  SRR7207089/SRR7207089.sorted.q20.bam \cf5 \\\cf2 \
+   
+\f1\b \cf3  -f
+\f0\b0 \cf2  BAM \cf5 \\\cf2 \
+   
+\f1\b \cf3  -g
+\f0\b0 \cf2  hs \cf5 \\\cf2 \
+   
+\f1\b \cf3  -n
+\f0\b0 \cf2  SRR7207011_ar_chip \cf5 \\\cf2 \
+   
+\f1\b \cf3  -B
+\f0\b0 \cf2  \cf5 \\\cf2 \
+   
+\f1\b \cf3  -q
+\f0\b0 \cf2  0.05 \cf5 \\\cf2 \
+   
+\f1\b \cf3  --keep-dup
+\f0\b0 \cf2  auto\
+\
+\cf4 #MACS3 callpeak for SRR7207017\cf2 \
+macs3 callpeak \cf5 \\\cf2 \
+   
+\f1\b \cf3  -t
+\f0\b0 \cf2  SRR7207017/SRR7207017.sorted.q20.bam \cf5 \\\cf2 \
+   
+\f1\b \cf3  -c
+\f0\b0 \cf2  SRR7207089/SRR7207089.sorted.q20.bam \cf5 \\\cf2 \
+   
+\f1\b \cf3  -f
+\f0\b0 \cf2  BAM \cf5 \\\cf2 \
+   
+\f1\b \cf3  -g
+\f0\b0 \cf2  hs \cf5 \\\cf2 \
+   
+\f1\b \cf3  -n
+\f0\b0 \cf2  SRR7207017_AR_ChIP \cf5 \\\cf2 \
+   
+\f1\b \cf3  -B
+\f0\b0 \cf2  \cf5 \\\cf2 \
+   
+\f1\b \cf3  -q
+\f0\b0 \cf2  0.05 \cf5 \\\cf2 \
+   
+\f1\b \cf3  --keep-dup
+\f0\b0 \cf2  auto}

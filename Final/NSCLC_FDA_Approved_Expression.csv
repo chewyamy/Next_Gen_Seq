@@ -1,0 +1,17 @@
+DISEASE,DRUG_COMBINATION,MUTATION_REMARK,PATIENT_PRESCREENING,PRIMARY_OUTCOME_MEASURE
+lung / carcinoma / non small cell carcinoma,Ipilimumab + Nivolumab,CD274_unspecified,Expression confirmed,"OS, PFS"
+lung / carcinoma / non small cell carcinoma,Cemiplimab,CD274_unspecified,Expression confirmed,"OS, PFS"
+lung / carcinoma / non small cell carcinoma,Atezolizumab + Chemotherapy,CD274_unspecified,Expression confirmed,"Disease free survival, relapse free survival, regression free survival, recurrence free survival"
+lung / carcinoma / non small cell carcinoma,Atezolizumab,CD274_unspecified,Expression confirmed,Overall survival
+lung / carcinoma / non small cell carcinoma,Nivolumab,CD274_unspecified,Expression confirmed,Overall survival
+lung / carcinoma / non small cell carcinoma,Nivolumab,CD274_unspecified,Expression confirmed,Overall survival
+lung / carcinoma / non small cell carcinoma,Nivolumab,CD274_unspecified,Expression confirmed,Overall survival
+lung / carcinoma / non small cell carcinoma,Nivolumab,CD274_unspecified,Expression confirmed,Overall survival
+lung / carcinoma / non small cell carcinoma,Nivolumab,CD274_unspecified,Expression confirmed,Overall survival
+lung / carcinoma / non small cell carcinoma,Pembrolizumab,CD274_unspecified,Expression confirmed,Overall survival
+lung / carcinoma / non small cell carcinoma,Pembrolizumab,CD274_unspecified,Expression confirmed,Overall survival
+lung / carcinoma / non small cell carcinoma,Pembrolizumab,CD274_unspecified,Expression confirmed,"OS, PFS"
+lung / carcinoma / non small cell carcinoma,Pembrolizumab,CD274_unspecified,Expression confirmed,"OS, PFS"
+lung / carcinoma / non small cell carcinoma,Pembrolizumab,CD274_unspecified,Expression confirmed,"OS, PFS"
+lung / carcinoma / non small cell carcinoma,Pembrolizumab,CD274_unspecified,Expression confirmed,"OS, PFS"
+lung / carcinoma / non small cell carcinoma,Pembrolizumab,CD274_unspecified,Expression confirmed,Progression free survival

@@ -1,0 +1,130 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red47\green180\blue29;\red180\green36\blue25;
+}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c20241\c73898\c14950;\cssrgb\c76411\c21697\c12527;
+}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Appendix:\
+\
+Commands:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+[ac10596@log-1 ac10596]$ mkdir ngs.final\
+[ac10596@log-1 ac10596]$ cp /scratch/work/courses/BI7653/project.2025/download.sh $SCRATCH/ngs.final\
+[ac10596@log-1 ac10596]$ cd ngs.final\
+[ac10596@log-1 ngs.final]$ ls\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b \cf3 download.sh
+\f0\b0 \cf2 \
+[ac10596@log-1 ngs.final]$ nano download.sh\
+[ac10596@log-1 ngs.final]$ srun --account=pr_284_general --time=4:00:00 --mem=4GB --pty /bin/bash\
+srun: job 60347642 queued and waiting for resources\
+srun: job 60347642 has been allocated resources\
+sba[ac10596@cm001 ngs.final]$ sbatch download.sh\
+Submitted batch job 60347643\
+[ac10596@cm001 ngs.final]$ squeue -u ac10596\
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\
+          60347642     short     bash  ac10596  R       0:45      1 cm001\
+          60347643     short download  ac10596  R       0:30      1 cm007\
+[ac10596@cm001 ngs.final]$ squeue -u ac10596\
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)\
+          60347642     short     bash  ac10596  R      34:18      1 cm001\
+[ac10596@cm001 ngs.final]$ ls\
+
+\f1\b \cf3 download.sh
+\f0\b0 \cf2           
+\f1\b \cf4 SRR7819991.fastq.gz
+\f0\b0 \cf2   
+\f1\b \cf4 SRR7819994.fastq.gz
+\f0\b0 \cf2 \
+slurm-60347643.out   
+\f1\b \cf4 SRR7819992.fastq.gz
+\f0\b0 \cf2   
+\f1\b \cf4 SRR7819995.fastq.gz
+\f0\b0 \cf2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b \cf4 SRR7819990.fastq.gz
+\f0\b0 \cf2   
+\f1\b \cf4 SRR7819993.fastq.gz
+\f0\b0 \cf2 \
+[ac10596@cm001 ngs.final]$ less slurm-60347643.out \
+\
+##See what the fastq files are\
+[ac10596@cm001 ngs.final]$ less /scratch/work/courses/BI7653/project.2025/project_fastqs.txt\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\
+control1        SRR7819990.fastq.gz\
+control2        SRR7819991.fastq.gz\
+control3        SRR7819992.fastq.gz\
+treated1        SRR7819993.fastq.gz\
+treated2        SRR7819994.fastq.gz\
+treated3        SRR7819995.fastq.gz\
+\
+##Downloading references\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+[ac10596@cm001 ngs.final]$ latest_release=$(curl -s 'http://rest.ensembl.org/info/software?content-type=application/json' | grep -o '"release":[0-9]*' | cut -d: -f2)\
+wget -L ftp://ftp.ensembl.org/pub/release-$\{latest_release\}/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz\
+wget -L ftp://ftp.ensembl.org/pub/release-$\{latest_release\}/gtf/homo_sapiens/Homo_sapiens.GRCh38.$\{latest_release\}.gtf.gz\
+--2025-05-09 22:37:53--  ftp://ftp.ensembl.org/pub/release-114/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz\
+           => \'91Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz\'92\
+Resolving ftp.ensembl.org (ftp.ensembl.org)... 193.62.193.169\
+Connecting to ftp.ensembl.org (ftp.ensembl.org)|193.62.193.169|:21... connected.\
+Logging in as anonymous ... Logged in!\
+==> SYST ... done.    ==> PWD ... done.\
+==> TYPE I ... done.  ==> CWD (1) /pub/release-114/fasta/homo_sapiens/dna ... done.\
+==> SIZE Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz ... 942484168\
+==> PASV ... done.    ==> RETR Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz ... done.\
+Length: 942484168 (899M) (unauthoritative)\
+\
+Homo_sapiens.GRCh38. 100%[=====================>] 898.82M  26.3MB/s    in 30s     \
+\
+2025-05-09 22:38:24 (29.9 MB/s) - \'91Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz\'92 saved [942484168]\
+\
+--2025-05-09 22:38:24--  ftp://ftp.ensembl.org/pub/release-114/gtf/homo_sapiens/Homo_sapiens.GRCh38.114.gtf.gz\
+           => \'91Homo_sapiens.GRCh38.114.gtf.gz\'92\
+Resolving ftp.ensembl.org (ftp.ensembl.org)... 193.62.193.169\
+Connecting to ftp.ensembl.org (ftp.ensembl.org)|193.62.193.169|:21... connected.\
+Logging in as anonymous ... Logged in!\
+==> SYST ... done.    ==> PWD ... done.\
+==> TYPE I ... done.  ==> CWD (1) /pub/release-114/gtf/homo_sapiens ... done.\
+==> SIZE Homo_sapiens.GRCh38.114.gtf.gz ... 64228966\
+==> PASV ... done.    ==> RETR Homo_sapiens.GRCh38.114.gtf.gz ... done.\
+Length: 64228966 (61M) (unauthoritative)\
+\
+Homo_sapiens.GRCh38. 100%[=====================>]  61.25M  8.52MB/s    in 7.3s    \
+\
+2025-05-09 22:38:32 (8.40 MB/s) - \'91Homo_sapiens.GRCh38.114.gtf.gz\'92 saved [64228966]\
+\
+[ac10596@cm001 ngs.final]$ ls\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b \cf3 download.sh
+\f0\b0 \cf2                                         
+\f1\b \cf4 SRR7819991.fastq.gz
+\f0\b0 \cf2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b \cf4 Homo_sapiens.GRCh38.114.gtf.gz
+\f0\b0 \cf2                      
+\f1\b \cf4 SRR7819992.fastq.gz
+\f0\b0 \cf2 \
+
+\f1\b \cf4 Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz
+\f0\b0 \cf2   
+\f1\b \cf4 SRR7819993.fastq.gz
+\f0\b0 \cf2 \
+slurm-60347643.out                                 
+\f1\b \cf4 SRR7819994.fastq.gz
+\f0\b0 \cf2 \
+
+\f1\b \cf4 SRR7819990.fastq.gz
+\f0\b0 \cf2                                 
+\f1\b \cf4 SRR7819995.fastq.gz
+\f0\b0 \cf2 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\
+}

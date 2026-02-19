@@ -1,0 +1,911 @@
+GENE,MUTATION_REMARK,DISEASE,ACTIONABILITY_RANK,DEVELOPMENT_STATUS,DRUG_COMBINATION,PRIMARY_OUTCOME_MEASURE,TRIAL_STATUS,PATIENT_PRESCREENING
+EGFR,(EGFR_Exon19del or EGFR_L858R or EGFR_T790M) and (CTNNB1_unspecified or PIK3CA_unspecified or RB1_unspecified or TP53_unspecified),lung / carcinoma / non small cell carcinoma,3,Phase 2,Anlotinib + Sunvozertinib,Progression free survival,Recruiting,Yes
+EGFR,(EGFR_Exon19del or EGFR_L858R or EGFR_T790M) and (CTNNB1_unspecified or PIK3CA_unspecified or RB1_unspecified or TP53_unspecified),lung / carcinoma / non small cell carcinoma,3,Phase 2,Anlotinib + Sunvozertinib,Progression free survival,Recruiting,Yes
+EGFR,(EGFR_Exon19del or EGFR_L858R or EGFR_T790M) and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 3,Osimertinib + Savolitinib,Progression free survival,Recruiting,Yes
+EGFR,(EGFR_Exon19del or EGFR_L858R) and CD274_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Alflutinib,Progression free survival,Recruiting,Yes
+EGFR,(EGFR_Exon19del or EGFR_L858R) and CD274_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Bevacizumab + Cisplatin + Pemetrexed + Tislelizumab,Progression free survival,Unknown,Expression confirmed
+EGFR,(EGFR_Exon19del or EGFR_L858R) and CD274_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Pemetrexed + Toripalimab,Overall Response Rate,Completed,Expressed/not
+EGFR,(EGFR_Exon19del or EGFR_L858R) and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Erlotinib + Telisotuzumab vedotin,Maximum tolerated dose/toxicity,"Active, not recruiting",Expression confirmed
+EGFR,(EGFR_Exon19del or EGFR_L858R) and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Capmatinib + Erlotinib,Maximum tolerated dose/toxicity,Terminated,Yes
+EGFR,(EGFR_Exon19del or EGFR_L858R) and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Capmatinib + Nazartinib,Overall Response Rate,Terminated,Comparison with wt
+EGFR,(EGFR_Exon19del or EGFR_L858R) and TP53_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Almonertinib + Anlotinib,Progression free survival,Not yet recruiting,Yes
+EGFR,(EGFR_Exon19del or EGFR_L858R) and TP53_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 3,Carboplatin + Osimertinib + Pemetrexed,Progression free survival,Unknown,Yes
+EGFR,(EGFR_Exon19del or EGFR_L858R) and TP53_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 4,Osimertinib,Progression free survival,Recruiting,Comparison with wt
+FGFR1,(FGFR1_unspecified or FGFR2_unspecified or FGFR3_unspecified) and CD274_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Pemigatinib + Sintilimab,Overall Response Rate,Recruiting,Expression confirmed
+EGFR,EGFR_C797,lung / carcinoma / non small cell carcinoma,3,Phase 2,BLU-701,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_C797,lung / carcinoma / non small cell carcinoma,3,Phase 2,STX-241,"MTD, ORR, Toxicity",Not yet recruiting,Yes
+EGFR,EGFR_C797,lung / carcinoma / non small cell carcinoma,3,Phase 2,TRX-221,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_C797,lung / carcinoma / non small cell carcinoma,3,Phase 2,WJ13404,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_C797 or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,JIN-A02,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_C797S,lung / carcinoma / non small cell carcinoma,3,Phase 1,QLH11811,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_C797S,lung / carcinoma / non small cell carcinoma,3,Phase 1,HS-10504,Maximum tolerated dose/toxicity,Not yet recruiting,Yes
+EGFR,EGFR_C797S,lung / carcinoma / non small cell carcinoma,3,Phase 2,HS-10375,Overall Response Rate,Recruiting,No
+EGFR,EGFR_C797S,lung / carcinoma / non small cell carcinoma,3,Phase 2,BBT-207,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_C797S,lung / carcinoma / non small cell carcinoma,3,Phase 2,TAS3351,,Recruiting,Yes
+EGFR,EGFR_C797S and EGFR_T790M ,lung / carcinoma / non small cell carcinoma,3,Phase 2,BLU-945,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_C797S and EGFR_no_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,BLU-945,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_C797S or EGFR_E709_T70delInsD or EGFR_G719 or EGFR_G724S or EGFR_L718 or EGFR_L747P or EGFR_L747S or EGFR_L792H or EGFR_S768I or EGFR_T854I or EGFR_V769L,lung / carcinoma / non small cell carcinoma,3,Phase 2,Afatinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_E709 or EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Observational,Osimertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_E709K/A,lung / carcinoma / non small cell carcinoma,4,Case study,Afatinib,Unknown,Unknown,Yes
+EGFR,EGFR_E709_T710delinsD,lung / carcinoma / non small cell carcinoma,4,Case study,Afatinib,Unknown,Unknown,Yes
+EGFR,EGFR_E709_T710delinsD,lung / carcinoma / non small cell carcinoma,4,Case study,Gefitinib,Unknown,Unknown,Yes
+EGFR,EGFR_E709_T710delinsD,lung / carcinoma / non small cell carcinoma,4,Case study,Erlotinib,Unknown,Unknown,Yes
+EGFR,EGFR_Exon18,lung / carcinoma / non small cell carcinoma,3,Phase 2,Neratinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon18,lung / carcinoma / non small cell carcinoma,3,Phase 2,Neratinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del,lung / carcinoma / non small cell carcinoma,3,Case study,Pimitespib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon19del,lung / carcinoma / non small cell carcinoma,3,Phase 1,Amivantamab + Lazertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del,lung / carcinoma / non small cell carcinoma,3,Phase 2,Gefitinib + Pemetrexed,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del,lung / carcinoma / non small cell carcinoma,3,Phase 2,Carboplatin + Pemetrexed + Toripalimab,"Complete response, Pathological complete response",Not yet recruiting,No
+EGFR,EGFR_Exon19del,lung / carcinoma / non small cell carcinoma,3,Phase 2,Apatinib + Camrelizumab,Overall Response Rate,Completed,Comparison with wt
+EGFR,EGFR_Exon19del,lung / carcinoma / non small cell carcinoma,3,Phase 3,Bevacizumab + Osimertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del and EGFR_G724S,lung / carcinoma / non small cell carcinoma,4,Case study,Pimitespib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon19del and EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 1,Crizotinib + Dacomitinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q,lung / carcinoma / non small cell carcinoma,3,Phase 2,Erlotinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q,lung / carcinoma / non small cell carcinoma,3,Phase 2,Gefitinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 1,Osimertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 1,Fruquintinib + Genolimzumab,Maximum tolerated dose/toxicity,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 1,Osimertinib + Rifampicin,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 1,Itraconazole + Osimertinib,Absorption rate,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 1,Osimertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 2,Gefitinib,"Disease control rate, Clinical benefit rate",Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 2,Gefitinib + Vinorelbine,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 2,Gefitinib + Tepotinib ,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 2,Atezolizumab + Bevacizumab + Carboplatin + Pemetrexed,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 2,Erlotinib + Luminespib,"MTD, ORR, Toxicity",Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 3,Erlotinib + Radiotherapy,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon19ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_S768I ,lung / carcinoma / non small cell carcinoma,3,Phase 3,Gefitinib + Stereotactic body radiation therapy,Progression free survival,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon20ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 1,Afatinib + Cetuximab,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_Exon20ins or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 1,Cetuximab + Osimertinib + Tucatinib,Maximum tolerated dose/toxicity,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 2,Lazertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Stereotactic body radiation therapy,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861G or EGFR_S768I or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Unknown,Osimertinib + Stereotactic radiotherapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q,lung / carcinoma / non small cell carcinoma,3,Phase 1,Afatinib + Pembrolizumab,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q,lung / carcinoma / non small cell carcinoma,3,Phase 1,Patritumab deruxtecan,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q,lung / carcinoma / non small cell carcinoma,3,Phase 1,Gefitinib + Tremelimumab,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q,lung / carcinoma / non small cell carcinoma,3,Phase 1,Navitoclax + Osimertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q,lung / carcinoma / non small cell carcinoma,3,Phase 2,Icotinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q,lung / carcinoma / non small cell carcinoma,3,Phase 2,Carboplatin + Lazertinib + Pemetrexed,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q,lung / carcinoma / non small cell carcinoma,3,Phase 2,Atezolizumab + Rociletinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q,lung / carcinoma / non small cell carcinoma,3,Phase 2,Lazertinib,"Intracranial ORR, CNS ORR",Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Dasatinib + Osimertinib,Progression free survival,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Afatinib + Cyclophosphamide + EGF-PTI,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Unknown,Alflutinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q or S768I,lung / carcinoma / non small cell carcinoma,3,Phase 3,Datopotamab Deruxtecan,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_L861Q or S768I,lung / carcinoma / non small cell carcinoma,3,Phase 3,Datopotamab Deruxtecan + Osimertinib,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_G719 or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib,Major pathologic response,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Afatinib,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Osimertinib + Platinum-based chemotherapy,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Amivantamab + Lazertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Amivantamab + Carboplatin + Pemetrexed,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Erlotinib + Ramucirumab,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Osimertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival","Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Osimertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Dacomitinib,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Gefitinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Gefitinib,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Erlotinib,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Erlotinib,Not defined,Completed,No
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Erlotinib,Progression free survival,Completed,No
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Case study,Erlotinib,Unknown,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Case study,Gefitinib,Unknown,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Case study,Gefitinib,Unknown,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Observational,Alflutinib,"IPFS, IORR, IDCR",Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Observational,Chemotherapy + Osimertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Out of trials human study,Pemetrexed,Unknown,Unknown,Comparison with wt
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + Tamnorzatinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,BPI-1178 + Osimertinib,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,YL202,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,QLH11811,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + VIC-1911,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + VIC-1911,Maximum tolerated dose/toxicity,Recruiting,No
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Almonertinib + Gentuximab,Maximum tolerated dose/toxicity,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + Triptolide,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Camrelizumab + Carboplatin + Pemetrexed,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + Tegavivint,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + Temozolomide,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Anlotinib + Erlotinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Nazartinib + Ribociclib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Naporafenib + Nazartinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Nazartinib + Trametinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Nazartinib + Trametinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + Savolitinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,AV-412,Maximum tolerated dose/toxicity,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + Selumetinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Durvalumab + Osimertinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Bevacizumab + Osimertinib,Overall survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Gefitinib + Nazartinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Capmatinib + Nazartinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Gefitinib + Savolitinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Zorifertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,DS-1205c + Gefitinib,Maximum tolerated dose/toxicity,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Afatinib + Xentuzumab,"MTD, ORR, Toxicity",Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + Sapanisertib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Afatinib,"PFS, TTP, OS",Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,EGFR-TKI + Stereotactic radiotherapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Amivantamab + Cetrelimab,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,BL-B01D1 + Osimertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Amivantamab + Osimertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib + SKB264,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Ametinib + Bevacizumab,"PFS, ORR",Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Amivantamab + Bevacizumab + Lazertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Erlotinib + R-(-)-gossypol acetic acid,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Bafisontamab + Osimertinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Carboplatin + Lazertinib + Pemetrexed,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Carboplatin + Lazertinib + Pemetrexed,Pathologic Response,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Carboplatin + Lazertinib + Pemetrexed,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib + Bevacizumab + Carboplatin + Pemetrexed,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib + Carboplatin + Pemetrexed,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib + Chemotherapy,"PFS, ORR",Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Lazertinib + Stereotactic body radiation therapy,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,BLU-701 + Carboplatin + Pemetrexed,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,BLU-701 + Osimertinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,BLU-701,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Carboplatin + Cisplatin + Icotinib + Pemetrexed,Major pathologic response,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Carboplatin + Cisplatin + Icotinib + Pemetrexed,Major pathologic response,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib + Radiotherapy,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Carboplatin + Lenvatinib + Pembrolizumab + Pemetrexed,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,LY3295668 + Osimertinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Amivantamab + Carboplatin + Lazertinib + Pemetrexed,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Amivantamab + Carboplatin + Lazertinib + Pemetrexed,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Cisplatin + Osimertinib + Pemetrexed,Lymph node clearance rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Befotertinib + Icotinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Keynatinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Afatinib + Cisplatin + Pemetrexed + Radiotherapy,Response rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Almonertinib + Microwave ablation,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Lenvatinib + Pembrolizumab,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib + Pemetrexed + Platinum-based chemotherapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Amivantamab + Lazertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Atezolizumab + Bevacizumab,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Ascorbic acid + Tyrosine kinase inhibitor,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Anlotinib + Gefitinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Durvalumab + Tremelimumab,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,ZN-e4,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Chemotherapy + Icotinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Cisplatin + Icotinib + Pemetrexed,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Pemetrexed + Toripalimab,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib + Stereotactic radiotherapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Anlotinib + Icotinib,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Anlotinib + Tyrosine kinase inhibitor,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Patritumab deruxtecan,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Patritumab deruxtecan,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Carboplatin + Icotinib + Pemetrexed,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Carboplatin + Icotinib + Pemetrexed,Clinical activity,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Icotinib + Stereotactic body radiation therapy,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Pemetrexed,Response rate,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Bevacizumab + Gefitinib,Unknown,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Bevacizumab + Gefitinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib + Selumetinib,Best overall response,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Gefitinib + Thalidomide,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Cyclophosphamide + Fludarabine + Interleukin-2 + Tumour infiltrating lymphocytes + Vemurafenib,Response rate,Unknown,Comparison with wt
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Atezolizumab + Bevacizumab + Carboplatin + Pemetrexed,Major pathologic response,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Cisplatin + Pemetrexed,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib + Ramucirumab,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Aspirin + Osimertinib,Major pathologic response,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Fruquintinib + Gefitinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Almonertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Almonertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Almonertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Almonertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib,Clearance of ctDNA,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib,Response rate,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib + Trastuzumab-emtansine,Maximum tolerated dose/toxicity,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Gefitinib + Nazartinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Capmatinib + Nazartinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Capmatinib + Nazartinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Erlotinib + Linsitinib,Unknown,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Gefitinib + Osimertinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Gefitinib + Olaparib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Berberine + Gefitinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Bevacizumab + Erlotinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Bevacizumab + Erlotinib,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Gefitinib + Tegafur-gimeracil-oteracil potassium,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib + Telaglenastat,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Ficlatuzumab + Gefitinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Poziotinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Neratinib,Overall Response Rate,Completed,Comparison with wt
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Lapatinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Lazertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Lazertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Lazertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Olmutinib,Overall Response Rate,Completed,No
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Nazartinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Tesevatinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Tesevatinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Tesevatinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Tesevatinib,Response rate,Completed,No
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Tesevatinib,Response rate,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Clinical activity,Withdrawn,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Biomarker discovery,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Dacomitinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Icotinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Icotinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Icotinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Icotinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Gefitinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Gefitinib,"Resection rate, surgery rate",Suspended,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Gefitinib,"Disease control rate, Clinical benefit rate",Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 2,Afatinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Erlotinib,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Almonertinib + HS-20117,"PFS, ORR",Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Datopotamab Deruxtecan + Osimertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Carboplatin or Cisplatin + Osimertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Almonertinib + Stereotactic body radiation therapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Almonertinib + Radiotherapy,Overall survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Amivantamab + Carboplatin + Lazertinib + Pemetrexed,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,EGFR-TKI + JY025,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Almonertinib + Chemotherapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Gefitinib or Erlotinib + Niacinamaide,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Lazertinib + Placebo,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Amivantamab + Lazertinib,"PFS, ORR","Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Almonertinib + Carboplatin + Pemetrexed,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Almonertinib + Carboplatin + Pemetrexed,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Icotinib + Stereotactic radiotherapy,Overall survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Anlotinib + Gefitinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Befotertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Patritumab deruxtecan,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Chemotherapy + Erlotinib,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Gefitinib + Yiqi-yangyin-jiedu Decoction,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Apatinib + Gefitinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Bevacizumab + Osimertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Naquotinib,Progression free survival,Terminated,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Almonertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Almonertinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Alflutinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Alflutinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Zorifertinib,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Abivertinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Bevacizumab + Erlotinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Bevacizumab + Erlotinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Afatinib + Cetuximab,"OS, PFS","Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Cisplatin + Gefitinib + Pemetrexed,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Cisplatin + Gefitinib + Pemetrexed,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Olmutinib,Unknown,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Nazartinib,Progression free survival,Withdrawn,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Tesevatinib,Overall survival,Terminated,No
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Osimertinib,Major pathologic response,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Osimertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Osimertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival","Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Icotinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Icotinib,Progression free survival,Completed,No
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Gefitinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 3,Erlotinib,Progression free survival,Completed,Expression confirmed
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Phase 4,Dacomitinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Unknown,Apatinib + Erlotinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Unknown,Osimertinib + Pemetrexed,Response rate,Recruiting,No
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Unknown,Almonertinib + Stereotactic body radiation therapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Unknown,Apatinib + Icotinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Unknown,Anlotinib + Gefitinib + Icotinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R,lung / carcinoma / non small cell carcinoma,1,Unknown,Gefitinib + Radiotherapy,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Lazertinib + Tepotinib ,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 3,Osimertinib + Telisotuzumab vedotin,Progression free survival,Withdrawn,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 3,Almonertinib + HS-10241,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Observational,Alflutinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 1,Almonertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Alflutinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Cisplatin or Carboplatin + Osimertinib + Pemetrexed or Paclitaxel + Radiotherapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Pemetrexed + Platinum-based chemotherapy + Sunvozertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Anlotinib + Sunvozertinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Almonertinib + Chemotherapy,Overall survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Almonertinib + Chemotherapy,Progression free survival,Unknown,Yes
+EGFR,EGFR_Exon19del or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Local Consolidation Therapy + Osimertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 3,Afatinib + Cetuximab,"OS, PFS","Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or EGFR_L858R or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 3,Almonertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival","Active, not recruiting",Yes
+EGFR,EGFR_Exon19del or Exon20ins or EGFR_G719 or EGFR_L858R or EGFR_L861 or EGFR_S768I or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Bintrafusp alfa + Carboplatin + Cisplatin + Pemetrexed,Progression free survival,Terminated,Yes
+EGFR,EGFR_Exon19del or Exon20ins or EGFR_G719 or EGFR_L858R or EGFR_L861 or EGFR_S768I or EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Almonertinib + Carboplatin + Nab-paclitaxel,Major pathologic response,Recruiting,Yes
+EGFR,EGFR_Exon20ins or ERBB2_Exon20ins,lung / carcinoma / non small cell carcinoma,3,Phase 2,Mobocertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon20ins or ERBB2_Exon20ins,lung / carcinoma / non small cell carcinoma,3,Phase 2,STX-721,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_19ins,lung / carcinoma / non small cell carcinoma,4,Case study,Gefitinib,Unknown,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Amivantamab + Carboplatin + Pemetrexed,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Amivantamab,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Approved other,Sunvozertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Approved other,Sunvozertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Case study,Erlotinib,Unknown,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Case study,Icotinib,Unknown,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,Alflutinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,ABSK112,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,BEBT-109,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,HS-20117,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,Andamertinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,Andamertinib,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,BLU-451,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,Bevacizumab + Chemotherapy + Pembrolizumab,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,Becotatug,Maximum tolerated dose/toxicity,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,Sunvozertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,Necitumumab + Osimertinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,Alflutinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,Alflutinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 1,Alflutinib,Overall Response Rate,Withdrawn,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Afatinib,"Disease control rate, Clinical benefit rate",Completed,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,BEBT-109 + Carboplatin or Cisplatin + Pemetrexed,"MTD, ORR, Toxicity",Not yet recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,BEBT-109,"MTD, ORR, Toxicity",Not yet recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,YK-029A,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,YK-029A,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,HS-10376,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Andamertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Becotatug + Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Carboplatin + Mobocertinib + Pemetrexed,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Poziotinib + Ramucirumab,Progression free survival,Withdrawn,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,MCLA-129,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,MCLA-129,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,MCLA-129,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,MCLA-129,Overall Response Rate,Recruiting,Expression confirmed
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Amivantamab + Carboplatin + Pemetrexed,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Pyrotinib,,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Pyrotinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Tarloxotinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Zipalertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Zipalertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Zipalertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Sunvozertinib,"Resection rate, surgery rate",Not yet recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Sunvozertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Sunvozertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Sunvozertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Mobocertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Mobocertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Mobocertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Mobocertinib,Maximum tolerated dose/toxicity,Withdrawn,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Anlotinib + Sintilimab,Progression free survival,Completed,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Pirotinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Luminespib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Afatinib + Cetuximab,"Disease control rate, Clinical benefit rate",Completed,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Erlotinib + Onalespib lactate,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Poziotinib,,Terminated,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Poziotinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Poziotinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Poziotinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Poziotinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 3,Poziotinib,Progression free survival,Suspended,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 3,Carboplatin or Cisplatin + Pemetrexed + Zipalertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 3,YK-029A,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 3,Becotatug + Osimertinib,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 3,Pyrotinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 3,Sunvozertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 3,Mobocertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 3,Entrectinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 3,Alflutinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Phase 4,Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Retrospective/Meta-analysis,Poziotinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_Exon_20ins,lung / carcinoma / non small cell carcinoma,1,Unknown,Sunvozertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_G719,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Afatinib,Not defined,Unknown,Yes
+EGFR,EGFR_G719,lung / carcinoma / non small cell carcinoma,1,Case study,Gefitinib,Unknown,Unknown,Yes
+EGFR,EGFR_G719,lung / carcinoma / non small cell carcinoma,1,Case study,Gefitinib,Unknown,Unknown,Yes
+EGFR,EGFR_G719,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_G719,lung / carcinoma / non small cell carcinoma,1,Phase 2,Neratinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_G719,lung / carcinoma / non small cell carcinoma,1,Phase 3,Afatinib,Unknown,Completed,Yes
+EGFR,EGFR_G719,lung / carcinoma / non small cell carcinoma,1,Retrospective/Meta-analysis,Afatinib,,Unknown,Yes
+EGFR,EGFR_G719 or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_G719 or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Phase 2,YK-029A,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_G719 or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Phase 2,Afatinib + Bevacizumab,Progression free survival,Recruiting,Yes
+EGFR,EGFR_G719 or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Phase 2,Sutetinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_G719 or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Pemetrexed + Platinum-based chemotherapy,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_G719 or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Phase 2,Alflutinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_G719 or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival","Active, not recruiting",Yes
+EGFR,EGFR_G719 or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_G719 or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Phase 3,Almonertinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_G719 or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Retrospective/Meta-analysis,Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_G719X or EGFR_L861Q or EGFR_S768I,lung / carcinoma / non small cell carcinoma,3,Phase 2,Befotertinib + Icotinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 1,Amivantamab + Lazertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 2,Afatinib,"PFS, TTP, OS",Completed,Yes
+EGFR,EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 2,Anlotinib + Dacomitinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 2,Alflutinib + Anlotinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 2,Carboplatin + Pemetrexed + Toripalimab,"Complete response, Pathological complete response",Not yet recruiting,No
+EGFR,EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 2,Apatinib + Camrelizumab,Overall Response Rate,Completed,Comparison with wt
+EGFR,EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 2,Gefitinib + Pemetrexed,Progression free survival,Completed,Yes
+EGFR,EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 2,Bevacizumab + Osimertinib,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 3,Bevacizumab + Osimertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 3,Bevacizumab + Icotinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_L858R,lung / carcinoma / non small cell carcinoma,3,Unknown,Almonertinib + Anlotinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_L858R_Exon19del and (TP53_Exon4 or TP53_Exon7),lung / carcinoma / non small cell carcinoma,3,Phase 3,Gefitinib or Erlotinib,Progression free survival,Completed,Yes
+EGFR,EGFR_L858R_Exon19del and EGFR_no_T790M and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Glumetinib + Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_L858R_Exon19del and EGFR_no_T790M and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Glumetinib + Osimertinib,Overall Response Rate,Unknown,Expression confirmed
+EGFR,EGFR_L858R_Exon19del and EGFR_no_T790M and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 3,Capmatinib + Osimertinib,Progression free survival,Terminated,Yes
+EGFR,EGFR_L858R_Exon19del and TP53_not_Exon4 and TP53_not_Exon7,lung / carcinoma / non small cell carcinoma,3,Phase 3,Gefitinib or Erlotinib,Progression free survival,Completed,Yes
+EGFR,EGFR_L861Q,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Afatinib,Not defined,Unknown,Yes
+EGFR,EGFR_L861Q,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_L861Q,lung / carcinoma / non small cell carcinoma,1,Phase 2,Neratinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_L861Q,lung / carcinoma / non small cell carcinoma,1,Phase 3,Afatinib,Unknown,Completed,Yes
+EGFR,EGFR_S768I,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Afatinib,Not defined,Unknown,Yes
+EGFR,EGFR_S768I,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_S768I,lung / carcinoma / non small cell carcinoma,1,Phase 2,Neratinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_S768I,lung / carcinoma / non small cell carcinoma,1,Phase 3,Afatinib,Unknown,Completed,Yes
+EGFR,EGFR_S768I or EGFR_V769L,lung / carcinoma / non small cell carcinoma,4,Case study,Gefitinib,Unknown,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Approved FDA,Osimertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Case study,Afatinib,Unknown,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Out of trials human study,Afatinib,Unknown,Unknown,Comparison with wt
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + Sapanisertib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,FHND-9041,Absorption rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,QLH11811,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Alisertib + Osimertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Oritinib,Maximum tolerated dose/toxicity,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Oritinib,Maximum tolerated dose/toxicity,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Befotertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Avitinib maleate,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + Savolitinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + Selumetinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Afatinib + Ruxolitinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Durvalumab + Osimertinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Nazartinib + Nivolumab,Progression free survival,Terminated,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Osimertinib + Ramucirumab,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Necitumumab + Osimertinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Necitumumab + Osimertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Rezivertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Rezivertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Naquotinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Abivertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Afatinib + Cetuximab,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 1,Olmutinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Naquotinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,YK-029A,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Bafisontamab + Osimertinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib + Radiotherapy,Progression free survival,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Almonertinib + Carboplatin + Pemetrexed,Progression free survival,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Anlotinib + Osimertinib,Progression free survival,Terminated,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Anlotinib + Osimertinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,ZN-e4,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Befotertinib,,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Befotertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Befotertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Befotertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Patritumab deruxtecan,"ORR, OS","Active, not recruiting",No
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Avitinib maleate,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Luminespib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Brigatinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Emibetuzumab + Erlotinib,Overall Response Rate,Completed,No
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Emibetuzumab + Erlotinib,Progression free survival,"Active, not recruiting",No
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Itacitinib + Osimertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Cabozantinib + Erlotinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Lerociclib + Osimertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Aspirin + Osimertinib,Overall Response Rate,Unknown,No
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Aspirin + Osimertinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Bevacizumab + Osimertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Bevacizumab + Osimertinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Rezivertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Malvertinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Rociletinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,BMS-690514,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Almonertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Alflutinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Erlotinib + Ruxolitinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Abivertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Poziotinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Canertinib,Clinical activity,Completed,No
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Lazertinib,Maximum tolerated dose/toxicity,Not yet recruiting,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Lazertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Lazertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Olmutinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Olmutinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Olmutinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Olmutinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Unknown,No
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,"ORR, PFS, DOR","Active, not recruiting",Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,"Active, not recruiting",Comparison with wt
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 2,Osimertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 3,Osimertinib,Progression free survival,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 3,Durvalumab + Osimertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 3,Rociletinib,Progression free survival,Terminated,No
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 3,Almonertinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 3,Olmutinib,Unknown,Terminated,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 3,Olmutinib,Progression free survival,Terminated,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 3,Osimertinib,Overall survival,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 3,Osimertinib,Overall survival,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 3,Osimertinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 3,Osimertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Phase 4,Osimertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_T790M,lung / carcinoma / non small cell carcinoma,1,Retrospective/Meta-analysis,Lazertinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_T790M and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Gefitinib + Savolitinib,Maximum tolerated dose/toxicity,Completed,Comparison with wt
+EGFR,EGFR_T790M and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Gefitinib + Tepotinib ,Progression free survival,Completed,Yes
+EGFR,EGFR_no_C797S and EGFR_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,BLU-945,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_no_Exon19del and EGFR_no_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 2,Almonertinib,Maximum tolerated dose/toxicity,Unknown,Yes
+EGFR,EGFR_no_Exon19del and EGFR_no_L858R,lung / carcinoma / non small cell carcinoma,3,Phase 2,Anlotinib + Sintilimab,Progression free survival,Completed,Yes
+EGFR,EGFR_no_Exon20ins,lung / carcinoma / non small cell carcinoma,3,Phase 2,Almonertinib,"ORR, EFS",Recruiting,Yes
+EGFR,EGFR_no_Exon20ins,lung / carcinoma / non small cell carcinoma,3,Phase 2,Bafisontamab + Osimertinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_no_Exon20ins,lung / carcinoma / non small cell carcinoma,3,Phase 2,Alflutinib + Cisplatin + Pemetrexed,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_no_Exon20ins,lung / carcinoma / non small cell carcinoma,3,Phase 2,FWD1509,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_no_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 1,Neoantigen vaccine + Tyrosine kinase inhibitor,Maximum tolerated dose/toxicity,Unknown,Yes
+EGFR,EGFR_no_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Oleclumab + Osimertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_no_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Anlotinib + Carboplatin + Pemetrexed,Progression free survival,Unknown,Yes
+EGFR,EGFR_no_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 2,Oleclumab + Osimertinib,,"Active, not recruiting",Yes
+EGFR,EGFR_no_T790M,lung / carcinoma / non small cell carcinoma,3,Phase 4,Afatinib + Osimertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival","Active, not recruiting",Yes
+EGFR,EGFR_no_T790M,lung / carcinoma / non small cell carcinoma,3,Unknown,Sunvozertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_no_T790M and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Observational,LMV-12 + Osimertinib,"ORR, PFS, DOR",Recruiting,Expression confirmed
+EGFR,EGFR_no_T790M and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Osimertinib + Savolitinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_no_T790M and RET_fusions,lung / carcinoma / non small cell carcinoma,3,Observational,LMV-12 + Osimertinib,"ORR, PFS, DOR",Recruiting,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Approved FDA,Docetaxel + Ramucirumab,Overall survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Out of trials human study,Pemetrexed,Unknown,Unknown,Comparison with wt
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Afatinib,"OS, PFS",Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,HS-10504,Maximum tolerated dose/toxicity,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,HBI-2376 + Osimertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Docetaxel + SMET12 + Toripalimab,Maximum tolerated dose/toxicity,Not yet recruiting,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Platinum-doublet chemotherapy + SMET12 + Toripalimab,Maximum tolerated dose/toxicity,Not yet recruiting,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,TRX-221,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,HSK40118,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,BBP-398 + Osimertinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Befotertinib + MCLA-129,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Befotertinib + MCLA-129,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,CPO301,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,IBI363,Overall Response Rate,Recruiting,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,HS-20117,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Osimertinib + Tegafur-gimeracil-oteracil potassium,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Cemiplimab + Sarilumab,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Tumor treating fields,ctDNA mutation detection,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Almonertinib + Retlirafusp alfa,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Dalpiciclib + EGFR-TKI,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Carotuximab + Osimertinib,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Erlotinib + Ipilimumab,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,BDTX-1535,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Personalized DC vaccine,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,BAY2927088_formulation A,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,BAY2927088_formulation B_1,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,BAY2927088_formulation B_2,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,CXCR5 modified EGFR CAR T-cells,Maximum tolerated dose/toxicity,Recruiting,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,TAS2940,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Almonertinib + Bevacizumab,Overall survival,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Osimertinib + Repotrectinib,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,MRX-2843 + Osimertinib,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,BBP-398,"ORR, DOR",Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Amivantamab + Lazertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Amivantamab + Lazertinib,"ORR, PFS, DOR",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,BCA101,Maximum tolerated dose/toxicity,Recruiting,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,BCA101 + Pembrolizumab,Maximum tolerated dose/toxicity,Recruiting,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Individualized neoantigen peptides vaccine,Maximum tolerated dose/toxicity,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Alisertib + Osimertinib,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,TY-9591,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Afatinib + Talcum powder,Clinical activity,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Carboplatin + Pemetrexed + Zimberelimab,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Carboplatin + Etrumadenant + Pemetrexed + Zimberelimab,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Osimertinib + Pelcitoclax,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Niraparib + Osimertinib,Maximum tolerated dose/toxicity,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Ipilimumab + Osimertinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Pembrolizumab + Stereotactic body radiation therapy,Maximum tolerated dose/toxicity,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Osimertinib + Stereotactic radiotherapy,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Gatipotuzumab + Tomuzotuximab,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Abemaciclib + Necitumumab,Maximum tolerated dose/toxicity,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Cucurmin + EGFR-TKI,Maximum tolerated dose/toxicity,Unknown,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Buparlisib + Gefitinib,Maximum tolerated dose/toxicity,Completed,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Dasatinib + Erlotinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Bortezomib + Erlotinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Cetuximab + Erlotinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Durvalumab + Gefitinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Durvalumab + Gefitinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Erlotinib + Momelotinib,Maximum tolerated dose/toxicity,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Pacritinib,Maximum tolerated dose/toxicity,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Crizotinib + Ipilimumab,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Futuximab + Nivolumab,Maximum tolerated dose/toxicity,Withdrawn,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Matuzumab + Pemetrexed,Unknown,Completed,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Binimetinib + Erlotinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Binimetinib + Erlotinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Afatinib + Necitumumab,Maximum tolerated dose/toxicity,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Dacomitinib + Osimertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Dacomitinib + Osimertinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Afatinib + Dasatinib,Maximum tolerated dose/toxicity,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Naquotinib,Maximum tolerated dose/toxicity,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Almonertinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Gefitinib + Savolitinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,DS-1205c + Osimertinib,Maximum tolerated dose/toxicity,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Pelitinib,Unknown,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 1,Dacomitinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Ipilimumab + Nivolumab,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,PH009-1,"MTD, ORR, Toxicity",Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib + Anlotinib + Chemotherapy,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib + Bevacizumab + Pemetrexed,Overall survival,Not yet recruiting,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,FHND-9041,Absorption rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib + Anlotinib,"Intracranial ORR, CNS ORR",Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Almonertinib + Etoposide,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Dalpiciclib + Osimertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Bevacizumab + Carboplatin + Pemetrexed + Serplulimab,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Adebrelimab + Chemotherapy + Famitinib,Overall Response Rate,Withdrawn,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib + Pemetrexed,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Golidocitinib + Sunvozertinib,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Anlotinib + Cadonilimab + Pemetrexed,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Bevacizumab + SY-3505,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Ivonescimab + Platinum-based chemotherapy,"PFS, ORR",Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Afatinib or Erlotinib or Gefitinib + Nintedanib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib + Ifebemtinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib + Ifebemtinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib + Ifebemtinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib + RC108,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib + RC108 + Toripalimab,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + SKB264,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + Dresbuxelimab + Ivonescimab + Pemetrexed,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Dresbuxelimab + Ivonescimab,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,H002,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,H002,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Erlotinib + OBI-821 + OBI-833,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,BPI-361175,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + Etoposide + Serplulimab,,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Platinum-based chemotherapy + SKB264 + Tagitanlimab,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Afatinib + Carboplatin + Osimertinib + Pemetrexed,"Disease control rate, Clinical benefit rate",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib + TQB3525,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,NRC-2694-A + Paclitaxel,Overall Response Rate,Recruiting,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + Nab-paclitaxel + Sintilimab,Major pathologic response,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Afatinib + Thoracic surgery,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + Pemetrexed + Pimurutamab,Overall Response Rate,Unknown,Overexpression
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Docetaxel + Pimurutamab,Overall Response Rate,Unknown,Overexpression
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Pimurutamab,Overall Response Rate,Unknown,Overexpression
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib + Chemotherapy,Maximum tolerated dose/toxicity,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Sutetinib,"Disease control rate, Clinical benefit rate",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Sutetinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Becotatug + Osimertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,AFM24 + SNK01,Overall Response Rate,Terminated,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib + Radiotherapy,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Izalontamab,Maximum tolerated dose/toxicity,Recruiting,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,ERAS-007 + Osimertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Almonertinib + Anlotinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,MCLA-129,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,MCLA-129,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Buparlisib + Erlotinib,Progression free survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Erlotinib + Gemcitabine + Platinum-based chemotherapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Ivonescimab,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,BBT-176 + Cetuximab,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,BBT-176,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,MRG003,Overall Response Rate,Unknown,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Bozitinib + Osimertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + Nivolumab + Pemetrexed,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Abemaciclib + Osimertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + Osimertinib + Pemetrexed,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Bevacizumab + Cisplatin + Durvalumab + Stereotactic body radiation therapy,"OS, PFS",Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Necitumumab + Osimertinib + Trastuzumab,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Afatinib + Cisplatin + Pemetrexed,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib + Quaratusugene ozeplasmid,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Amivantamab + Lazertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + Osimertinib + Paclitaxel,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + Pemetrexed + Tislelizumab,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Almonertinib + Famitinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,TY-9591,Intracranial Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,TY-9591,"IRR, IPFS",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,TY-9591,"IPFS, IORR",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Apatinib + Tyrosine kinase inhibitor,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Bafisontamab,"OS, PFS",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Anlotinib + Osimertinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Zipalertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Zipalertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib + Vociprotafib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Sunvozertinib,Best overall response,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Mobocertinib,Response rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Pembrolizumab + Ramucirumab,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib + Stereotactic body radiation therapy,Progression free survival,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib + Stereotactic body radiation therapy,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Anlotinib + Sintilimab,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,FCN-411,Maximum tolerated dose/toxicity,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Dihydroartemisinin + Icotinib,"OS, PFS",Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Afatinib + Tucidinostat,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Oritinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Oritinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Golidocitinib + Osimertinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib + Stereotactic radiotherapy,"Intracranial ORR, CNS ORR",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib + Stereotactic radiotherapy,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Stereotactic body radiation therapy + Tyrosine kinase inhibitor,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Gefitinib + Ningetinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Apatinib + Chemotherapy,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Anti-NY-ESO-1/LAGE-1a CAR T-cells + Pembrolizumab,Overall Response Rate,Terminated,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Anti-NY-ESO-1/LAGE-1a CAR T-cells,Overall Response Rate,Terminated,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Avitinib maleate,Response rate,Recruiting,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,AVID100,Clinical activity,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Icotinib + Stereotactic body radiation therapy,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Atezolizumab + Cabozantinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Pemetrexed,"Disease control rate, Clinical benefit rate",Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Erlotinib + Sunitinib,Progression free survival,Completed,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Anlotinib + Docetaxel,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + Durvalumab + Pemetrexed,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib + Savolitinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Cetuximab + Cilengitide + Cisplatin + Vinorelbine,Progression free survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + Cetuximab + Pemetrexed + Radiotherapy,Overall survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Erlotinib + Foretinib,Overall Response Rate,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Cetuximab + Natural killer cell immunotherapy,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Bevacizumab + Carboplatin + Pemetrexed,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Rociletinib + Trametinib,Unknown,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,MP0250 + Osimertinib,Overall Response Rate,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Cetuximab + Chemotherapy + Radiotherapy,Overall survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Erlotinib + MK2206,"DCR, ORR",Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Apatinib + Erlotinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Capecitabine + Cetuximab + Oxaliplatin,Response rate,Completed,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Atezolizumab + Bevacizumab + Carboplatin + Pemetrexed,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Atezolizumab + Bevacizumab + Carboplatin + Paclitaxel,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Durvalumab + Olaparib,Best overall response,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Erlotinib + Tivantinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Gemcitabine + Vandetanib,Progression free survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Fruquintinib,Unknown,Unknown,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Fruquintinib,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Cisplatin + Panitumumab + Pemetrexed,"Time to progression, time to recurrence",Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Cisplatin + Panitumumab + Pemetrexed,Overall Response Rate,Terminated,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Cisplatin + Panitumumab + Pemetrexed,Clinical activity,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Cisplatin + Panitumumab + Pemetrexed,Progression free survival,Suspended,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Matuzumab + Pemetrexed,Overall Response Rate,Completed,Expression confirmed
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Cisplatin + Gemcitabine + Imgatuzumab + Pemetrexed,Progression free survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Carboplatin + Erlotinib + Paclitaxel,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Nimotuzumab + Nivolumab,Overall Response Rate,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Gefitinib + Metformin,Progression free survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Celecoxib + Erlotinib,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Erlotinib + Trametinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Fulvestrant + Gefitinib,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Dacomitinib + Osimertinib,Overall survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Necitumumab + Osimertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Bevacizumab + Osimertinib,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,BMS-690514,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Almonertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Almonertinib,Maximum tolerated dose/toxicity,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Almonertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Almonertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Almonertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Almonertinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib,"PFS, ORR",Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Alflutinib,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,AZD4635 + Oleclumab,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Gefitinib + Osimertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Zorifertinib,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Afatinib + Cetuximab,"Time to progression, time to recurrence",Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Erlotinib + Hydroxychloroquine,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Ficlatuzumab + Gefitinib,Overall Response Rate,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Canertinib,Clinical activity,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Lazertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Lazertinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Pelitinib,Not defined,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Vandetanib,Progression free survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Docetaxel + Vandetanib,Progression free survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib,Overall Response Rate,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib,Overall Response Rate,"Active, not recruiting",No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib,Biomarker discovery,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib,Clinical activity,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib,Overall Response Rate,Unknown,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Osimertinib,Unknown,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Dacomitinib,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Dacomitinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Dacomitinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Dacomitinib,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Gefitinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Gefitinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Gefitinib,Tumour volume,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Erlotinib,Response rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Erlotinib,Overall survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Afatinib,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Afatinib,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 2,Ipilimumab + Nivolumab,Overall Response Rate,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Erlotinib,Overall survival,"Active, not recruiting",No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Afatinib + Dacomitinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Carboplatin + Ivonescimab + Pemetrexed,"OS, PFS","Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Carboplatin + Ivonescimab + Pemetrexed,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,BL-B01D1,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Sacituzumab tirumotecan,"OS, PFS",Recruiting,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Anlotinib + Penpulimab,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,SKB264,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Almonertinib + Radiotherapy,Overall survival,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Carboplatin + PM8002 + Pemetrexed,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,EGFR-TKI + Metformin,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Osimertinib + TY-9591,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Pemetrexed + Placebo + Platinum-based chemotherapy + Retlirafusp alfa,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Bevacizumab + Pemetrexed + Platinum-based chemotherapy + Retlirafusp alfa,Progression free survival,Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Almonertinib + Chemotherapy,Progression free survival,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Almonertinib + Cisplatin + Pemetrexed,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Osimertinib + Pemetrexed + Platinum-based chemotherapy,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Osimertinib + Pemetrexed + Platinum-based chemotherapy,Major pathologic response,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Carboplatin + Pemetrexed + Toripalimab,Overall Response Rate,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Bevacizumab + Carboplatin + Paclitaxel,Progression free survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Cisplatin + Pemetrexed + Placebo + Sintilimab,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Cisplatin + IBI305 + Pemetrexed + Sintilimab,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Oritinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Oritinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Befotertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Carboplatin + Pembrolizumab + Pemetrexed,"OS, PFS",Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Stereotactic body radiation therapy + Tyrosine kinase inhibitor,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Anlotinib + Icotinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Endostatin + Tyrosine kinase inhibitor,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Carboplatin + Vinorelbine,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Erlotinib + Sunitinib,Overall Response Rate,Completed,Overexpression
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Erlotinib + Sunitinib,Overall Response Rate,Completed,Overexpression
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Erlotinib or Gefitinib or Icotinib + Whole brain radio therapy,Intracranial progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Gefitinib + Thalidomide,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Chemotherapy + Gefitinib,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Fruquintinib,Overall survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Erlotinib + Onartuzumab,Overall survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Carboplatin + Erlotinib + Paclitaxel,Unknown,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Rezivertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Rociletinib,Progression free survival,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Almonertinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Almonertinib,Progression free survival,Terminated,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Alflutinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Bevacizumab + Erlotinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Lazertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Docetaxel + Vandetanib,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Gefitinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Gefitinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Gefitinib,Overall survival,Completed,No
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 3,Gefitinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 4,Beta-elemene + Tyrosine kinase inhibitor,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Phase 4,Cobicistat + Osimertinib,"Disease control rate, Clinical benefit rate",Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Unknown,Osimertinib,Progression free survival,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Unknown,Carboplatin + Pemetrexed + Tyrosine kinase inhibitor,"OS, PFS",Completed,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Unknown,Sunvozertinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Unknown,Chemotherapy + Icotinib,"Disease free survival, relapse free survival, regression free survival, recurrence free survival",Not yet recruiting,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Unknown,Anlotinib + Tyrosine kinase inhibitor,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Unknown,Radiotherapy + Tyrosine kinase inhibitor,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Unknown,Metformin + Tyrosine kinase inhibitor,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Unknown,Almonertinib,Progression free survival,Unknown,Yes
+EGFR,EGFR_unspecified,lung / carcinoma / non small cell carcinoma,2,Unknown,Osimertinib,Biomarker discovery,Recruiting,No
+EGFR,EGFR_unspecified and ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Erlotinib + Gemcitabine + Platinum-based chemotherapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified and ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Almonertinib or Furmonertinib or Osimertinib + Disitamab vedotin,Overall Response Rate,Not yet recruiting,Expression confirmed
+EGFR,EGFR_unspecified and ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Alflutinib + Disitamab vedotin,Overall Response Rate,Not yet recruiting,Expression confirmed
+EGFR,EGFR_unspecified and HHLA2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,NPX267,"Disease control rate, Clinical benefit rate",Recruiting,Yes
+EGFR,EGFR_unspecified and KRAS_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Erlotinib + Gemcitabine + Platinum-based chemotherapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Capmatinib + Erlotinib,Maximum tolerated dose/toxicity,Completed,Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Osimertinib + Tepotinib ,Maximum tolerated dose/toxicity,Withdrawn,Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Savolitinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Andamertinib + Bozitinib,"MTD, ORR, Toxicity",Recruiting,Overexpression
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Andamertinib + Bozitinib,"MTD, ORR, Toxicity",Recruiting,Overexpression
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Andamertinib + Bozitinib,"MTD, ORR, Toxicity",Recruiting,Overexpression
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Andamertinib + Bozitinib,Overall Response Rate,Recruiting,Expression confirmed
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Capmatinib + Osimertinib + Ramucirumab,Progression free survival,Recruiting,Expression confirmed
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Tepotinib ,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Capmatinib + Gefitinib,,Completed,Expression confirmed
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Capmatinib + Osimertinib,Progression free survival,Recruiting,Expression confirmed
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Tepotinib ,Overall Response Rate,"Active, not recruiting",Expression confirmed
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Savolitinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Savolitinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Savolitinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Savolitinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Savolitinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Savolitinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Savolitinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Osimertinib + Savolitinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 3,Erlotinib + Onartuzumab,Overall survival,Completed,No
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 3,Osimertinib + Savolitinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified and MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 3,Erlotinib + Onartuzumab,Progression free survival,Completed,Yes
+EGFR,EGFR_unspecified and MUC1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,M1231,"ORR, DOR",Completed,Expression confirmed
+EGFR,EGFR_unspecified and PIK3CA_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Erlotinib + Gemcitabine + Platinum-based chemotherapy,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified and TP53_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Bevacizumab + Carboplatin + Osimertinib + Pemetrexed,Overall Response Rate,Unknown,Yes
+EGFR,EGFR_unspecified and TP53_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 3,Almonertinib + Anlotinib,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified and TP53_unspecified and RB1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Cisplatin + Etoposide + Osimertinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified or ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Neratinib,Maximum tolerated dose/toxicity,Completed,Expression confirmed
+EGFR,EGFR_unspecified or ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Rosuvastatin calcium + Sunvozertinib,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified or ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Digoxin + Sunvozertinib,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified or ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Midazolam + Sunvozertinib,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified or ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Andamertinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified or ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Sunvozertinib,Maximum tolerated dose/toxicity,Recruiting,Yes
+EGFR,EGFR_unspecified or ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Mobocertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified or ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Alflutinib,Maximum tolerated dose/toxicity,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified or ERBB2_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Sunvozertinib,Overall Response Rate,"Active, not recruiting",Yes
+EGFR,EGFR_unspecified or ERBB2_unspecified or MET_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Carboplatin + Pemetrexed + Sulfatinib + Toripalimab,Progression free survival,Recruiting,Yes
+EGFR,EGFR_unspecified or IGF1R_unspecified ,lung / carcinoma / non small cell carcinoma,2,Phase 2,Afatinib + Simvastatin,Overall Response Rate,Completed,Comparison with wt
+FGFR1,FGFR1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Regorafenib,Maximum tolerated dose/toxicity,Terminated,No
+FGFR1,FGFR1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Pazopanib,Overall Response Rate,Terminated,No
+FGFR1,FGFR1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 1,Nintedanib,Overall Response Rate,"Active, not recruiting",Yes
+FGFR1,FGFR1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Dovitinib,Unknown,Completed,No
+FGFR1,FGFR1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Ponatinib,Unknown,Unknown,Expression confirmed
+FGFR1,FGFR1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,AZD4547 + Docetaxel,Maximum tolerated dose/toxicity,Completed,Expression confirmed
+FGFR1,FGFR1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Pazopanib,Tumour volume,Completed,No
+FGFR1,FGFR1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Nintedanib,Progression free survival,Completed,Expression confirmed
+FGFR1,FGFR1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Dovitinib,Response rate,Unknown,No
+FGFR1,FGFR1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 3,Docetaxel + Nintedanib,"Disease control rate, Clinical benefit rate",Terminated,No
+FGFR1,FGFR1_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 3,Pazopanib,Overall survival,Terminated,No
+FGFR1,FGFR1_unspecified or FGFR2_unspecified or FGFR3_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Erdafitinib,Overall Response Rate,Completed,Yes
+FGFR1,FGFR1_unspecified or FGFR2_unspecified or FGFR3_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Pemigatinib,Overall Response Rate,Completed,Yes
+FGFR1,FGFR1_unspecified or FGFR2_unspecified or FGFR3_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Pemigatinib,Overall Response Rate,Recruiting,Yes
+FGFR1,FGFR1_unspecified or FGFR2_unspecified or FGFR3_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Pemigatinib,Overall Response Rate,Completed,Yes
+FGFR1,FGFR1_unspecified or FGFR2_unspecified or FGFR3_unspecified,lung / carcinoma / non small cell carcinoma,3,Phase 2,Rogaratinib,Progression free survival,Terminated,Expression confirmed
+FGFR1,FGFR1_unspecified or FGFR2_unspecified or FGFR3_unspecified,lung / carcinoma / non small cell carcinoma,3,Unknown,Pemigatinib,Overall Response Rate,Recruiting,Yes

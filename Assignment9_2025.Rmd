@@ -1,0 +1,428 @@
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+### Next Generation Sequence Analysis Assignment 9 (2025)
+
+This is the fourth week on differential gene expression (DGE) with bulk RNA-seq data. In the previous week you executed the Salmon+tximport+DESeq2 workflow to analyze DGE in normal and oral squamous cell carcinoma (OSCC) ("tumor") RNA-seq libraries from Conway et al. (2015). You ran the nf-core:rnaseq pipeline to quantify transcripts using Salmon, imported isoform-level TPMs into DESeq2 to create gene-level counts, ran DESeq2 to detect differentially expressed genes, and learned about log2 fold-change shrinkage and independent filtering of DESeq2 results.
+
+This week you will take a closer at statisticl methods in the inference of differentially expressed genes and how to correctly interpret DEG analysis outputs. You will then conduct an example of a common downstream analysis to identify gene ontology terms that are enriched in DEGs in the OSCC data.
+
+### Assignment objective
+
+After completion of this assignment, students will know how to interpret results of common multiple test correction methods and advanced topics in DGE analysis. Students will also learn about gene ontology and performing enrichment tests.
+
+### About the data
+
+The data consists of bulk RNA-seq libraries from normal and associated oral squamous cell carcinoma (OSCC) ("tumor") that you were introduced to in Assignment 8, Part I. The two tissue types were sampled from each patient with OSCC in a paired design. Paired-end bulk RNA-seq (mRNA) libraries were then sequenced on an Illumina HiSeq 2500. The original publication is Conway et al (2015) Oncotarget. 2015 Nov 24; 6(37): 40186–40201 <https://www.oncotarget.com/article/5529/text/>
+
+### Completing your assignment
+
+Your answers to multiple choice questions can be entered via the "Quiz"->"Assignment 9A (2025)" link on Brightspace. Upload your volcano plot from Q1.11 and dotplot from Q2.1 to "Assignments"->"Assignment 9B (2025)"
+
+### Task 1: P-values and Multiple Test Correction
+
+As in Assignment 8, this assignment is designed to be executed interactively by consecutively executing each code block by clicking on green arrow at in the upper right of the code block. It is recommended that you perform this exercise on the HPC via Open OnDemand. To get started, upload this .Rmd to a directory of your choosing on the HPC. Load RStudio on OOD and confirm you are launching R Version "r/gcc/4.2.0"
+
+**To facilitate uniformity in results, you will again use the Salmon "quant.sf" files from Assignment 8 in the HPC directory `/scratch/work/courses/BI7653/hw8_part2.2025/salmon_results`**. 
+
+Here, you can interactively run the full tximport+DESeq2 analysis as you did in Week 8. This takes a few minutes. 
+
+```{r}
+library(tximport)
+library(DESeq2)
+library(tidyverse)
+
+# Create info for metadata and file paths
+patient_ids <- c('PG038','PG108','PG123','PG136')
+sample_names <- c(paste(patient_ids,'_N',sep=''),paste(patient_ids,'_T',sep=''))
+sample_condition <- c(rep('normal',4),rep('tumor',4))
+
+files <- file.path('/scratch/work/courses/BI7653/hw8_part2.2025/salmon_results',sample_names,'quant.sf')
+names(files) <- sample_names
+tx2gene <- read.table(file.path('/scratch/work/courses/BI7653/hw8_part2.2025/','tx2gene.tsv'),header=F,sep="\t")
+
+txi <- tximport(files, type="salmon", tx2gene=tx2gene) # The txi variable is a simple list object containing gene counts and other info
+
+#Create metadata.df data.frame
+metadata.df <- data.frame(sample = factor(sample_names),
+                         patient = factor( c(patient_ids,patient_ids)),
+                         condition = factor(sample_condition,levels = c('normal','tumor')) )
+
+# set row names attribute of metadata.df
+row.names(metadata.df) <- sample_names
+
+# Use tximport to import Salmon quant.sf files to convert transcript-level TPMs, to gene-level counts and specify design formula
+dds <- DESeqDataSetFromTximport(txi,
+                                   colData = metadata.df,
+                                   design = ~ patient + condition)
+# pre-filter low count genes
+keep <- rowSums(counts(dds)) >= 10
+dds <- dds[keep,]
+
+# run the DESeq2 wrapper
+dds <- DESeq(dds)
+
+
+res <- results(dds, contrast = c('condition','tumor','normal'),alpha = 0.05)
+
+# note: by providing res as an argument we ensure that alpha = 0.05 is also the basis for p-values reported by lfcShrink.
+res.lfcShrink <- lfcShrink(dds, 
+                           res = res,
+                           coef = 'condition_tumor_vs_normal',
+                           type = 'apeglm')
+
+```
+
+
+
+View the results table.
+```{r}
+res.lfcShrink
+```
+
+Get a complete explanation of columns in the `res.lfcShrink` object
+
+```{r}
+mcols(res.lfcShrink)$description
+```
+
+Visualize as a tibble with GeneIDs as column.
+
+```{r}
+res.lfcShrink %>%
+  as.data.frame() %>% # coerce to data.frame first to preserve rownames attribute
+  rownames_to_column(var = "GeneID") %>%
+  as_tibble()
+```
+
+Review the MA plot for these data after LFC shrinkage.
+```{r}
+plotMA(res.lfcShrink)
+```
+
+The purpose of DESeq analysis conducted here is to identify differentially expressed genes between tumor and normal bulk RNA-seq libraries in the OSCC data. The analysis above correctly accounts for the paired nature of the statistical design (both normal and tumor samples comes from the same patients), estimates the log2-fold change (LFC) for each gene, shrinks the LFC estimates as required by DESeq2 best practices, performs independent filtering to eliminate genes with too little power to detect statistical significance, reports the p-values of the null hypothesis of LFC = 0, and conducts a multiple test correction.
+
+The shape of the raw (uncorrected) p-value distribution can alert us to potential problems in the statistical analysis. If there were no DEGs at all, we would expect a uniform distribution of p-values.
+
+Construct a histogram of the raw (uncorrected) p-values from the DESeqResults object.
+
+```{r}
+res.lfcShrink %>%
+  as_tibble() %>% # coerce to tibble
+  ggplot(aes(pvalue)) + 
+  geom_histogram(fill="light blue",color='black',bins = 40)
+```
+
+**Q1.1 Which pattern below do you observe in your histogram? What does this suggest about gene expression? Select the single best answer [ 1 point ]**    
+(a) a uniform distribution (no large "peaks" or "valleys" in the distribution) suggests a disappointing result that very few if any genes are differentialy expressed in the analysis   
+(b) depletion of values with low p-values. This could suggest a confounding factor such as a batch effect.  
+#(c) an enrichment of low p-values. This is the expected result if there is a large class of differentially expressed genes between tumor and normal tissue types  
+(d) a choppy appearance (some p-value bins observed, others not observed) could mean the P-values fall into discrete classes (undesirable)   
+
+
+In DGE analysis, statistical tests are performed independently for each gene in the genome (or, more accurately in the DESeq2 case, each gene that survives the independent filtering process). In statistics, whenever multiple independent tests are performed of the same null hypothesis, it is mandatory to perform a multiple test correction. The reason for this is because the probability of falsely rejecting the null hypothesis when it is true (i.e., Type I error) scales positively with the number of statistical tests. In other words, when conducting a single test, the probability of making a Type I error is 0.05, but if we conduct say, 100 tests, the number of tests that we can expect will false reject the null hypothesis when it is true is 100 * 0.05 = 5. Moreover, the probability of making one or more  Type I errors is much higher than 0.05. In fact, the probability of making one or more (read "any") Type I errors in a "family", or group, of tests is known as the Family-Wise Error Rate (FWER). This is defined as:
+
+$$FWER = 1 - (1 - \alpha)^m$$
+Where, $\alpha$ is the probability of observing a test statistic as extreme or more extreme than observed assuming the null hypothesis is true  
+       *m* is the number of tests
+
+The FWER for 100 tests is therefore 99.4%. Therefore, we are virtually guaranteed to make at least one Type I error (whereas for a single test, there is only a 5% chance). This is typically considered an unacceptably high probability of making errors. Moreover, the expected number of false rejections of the null hypothesis when it is true of 5 in 100 tests is simply too high for drawing accurate inferences.
+
+**Q1.2 How many tests in the OSCC data (after independent filtering) would we expect to be Type I errors without a multiple test correction at $\alpha$ = 0.05? Hint:  how many genes have a non-NA value in the padj column of the `res.lfcShrink` object or see "Task 3: Independent Filtering by DESeq2" from Assignment 8, Part II for help. [ 1 point ]**
+
+(a) 1  
+(b) 976  
+(c) 12,363  
+#(d) 19,520   
+
+There are several ways to perform multiple tests corrections. Two methods often adopted in genomics research are to control the FWER at desired level (e.g., at 0.05) using the Bonferroni correction or to control the proportion of significant tests that are Type I errors with the False Discovery Rate (FDR) correction, or simply "FDR". If you are unfamiliar with multiple test correction procedures, a very helpful introduction can be found here: <https://pmc.ncbi.nlm.nih.gov/articles/PMC6099145/>
+
+The "padj" column in the `res.lfcShrink` results objects is are the FDR values. Why this the default in DESeq2? Usually, the reason FDR is adopted over Bonferroni is because Bonferroni is too stringent and has too low sensitivity (i.e., True positives / True positives + False Negatives is low). Let's see how many DEGs there are if we use the Bonferroni. 
+
+The Bonferroni correction aims to control the probability of making **any** Type I errors in the experiment at 5%. In other words, if you adopt the Bonferroni method (with $\alpha$ = 0.05), there is only a 5% chance that ANY of the inferred DEGs are because of a Type I error. Said in yet a different way, if you performed the same RNA-seq experiment 100 times and applied a Bonferroni correction to each dataset, only 5% of the RNA-seq experiments would have one or more (i.e., any) falsely inferred DEGs and 95% of the experiments are expected to have no Type I errors at all. That's really impressive! However, the problem with the Bonferroni correction is that it is often too stringent (i.e., low sensitivity) and produces an intolerable number of false negatives (i.e., genes that are actually are DEGs, but are not inferred as such). The Bonferroni correction is easy to apply. Divide $\alpha$ (i.e., 0.05) by *m*, the number of tests. This is then the new threshold for un-adjusted, or raw, p-values. 
+
+**Q1.3 How many significant DEGs are in your DESeq2 results for the OSCC data after applying a Bonferroni correction? Hint: you should not use the padj column to arrive at your answer since this is the FDR) [ 1 point ]**
+
+(a) 36  
+(b) 71  
+#(c) 161  
+(d) 976  
+
+
+Results for Bonferroni corrected data can either be reported by setting a new threshold for signifiance as described above, and interpreting the raw p-values with respect to that threshold. More commonly, an "adjusted" p-value can be reported which is the raw p-value multiplied by the number of tests, *m*, and this "adjusted" p-value interpreted with respect to 0.05. If you were to extract DESeq results with the multiple test correction set to Bonferroni (this can be done), the "padj" column would then have an "adjusted" p-value that you would interpret with respect to $\alpha$, or 0.05.
+
+Bonferroni corrections are common in some areas of genomics, but in RNA-seq it is more common to adopt the FDR approach. DESeq2, by default, applies the Benjamini-Hochberg FDR method and resulting values (sometimes referred to as q-values) are reported in the "padj" column (`?results`,`?p.adjust`).
+
+Let's preview the results sorted on the adjusted p-value.  
+
+```{r}
+# Here we "tidy" the data using a series of pipes to return a tibble (tbl_df) with feature_id column with ENSEMBL gene ids and remaining columns from the results object
+# note: the biobroom package has functionality to streamline this operation
+res.lfcShrink.tbl_df <- res.lfcShrink %>%
+  as.data.frame() %>%
+  rownames_to_column(var = "feature_id") %>%
+  as_tibble()
+
+res.lfcShrink.tbl_df %>% 
+  arrange(padj) # sort tibble in ascending order on adjusted p-value (FDR)
+```
+
+So how do we interpret the FDR in the "padj" column? 
+
+The purpose of FDR is to control the proportion of tests that are false positives in analysis performed on a family of tests (i.e., in the set of genes that survived independent filtering in your analysis and have a value in the "padj" column). If we set the FDR significance threshold at 0.05, then the set values in the "padj" with FDR < 0.05 is the set of genes that are DEGs. The key point is that 5% of genes in this set are expected to be false positives (i.e., Type I errors). Effectively, by controlling the proportion of false positives, you the analysts are conceding that you will tolerate some false positives in favor of increasing the sensitivity of your analysis (i.e., to infer more of the true positive DEGs). 
+
+Is 5% too high a percentage of your significant genes that are false positives? If so, you can choose *a priori* a lower proportion of false positives by setting the FDR at say 1%. In this case, the significance threshold in the "padj" column to 0.01 and 1% of the genes with "padj" < 0.01 are expected to be Type I errors.
+
+Strictly speaking, FDR values are not p-values, but are often referred to as q-values to reflect the difference in interpretation from a conventional p-value, where a p-value is the probability of making a Type I error and the q-value is a proportion of false positives in a set of significant tests.
+
+**Q1.4 How many genes are significant in your analysis with FDR set at 0.05? [ 1 point ]**  
+
+(a) 42  
+(b) 396  
+(c) 454  
+#(d) 933  
+(e) 976  
+
+
+**Q1.5 How many of the genes are upregulated in the tumor samples? [ 1 point ]**  
+
+(a) 474  
+#(b) 484  
+(c) 1322  
+(d) 10943  
+(e) 20194  
+
+**Q1.6 Approximately, how many genes do you expect are false positives in your analysis at the threshold of 0.05? Select the single best answer [ 1 point ]**  
+
+#(a) 47  
+(b) 23  
+(c) 5  
+(a) 0  
+
+**Q1.7 Which of the following is true about genes with FDR < 0.05? Select the single best answer [ 1 point ].**   
+
+(a) There is a 5% chance that one or more of genes with FDR < 0.05 is a false rejection of the null hypothesis  
+(b) 5% of the genes in this set are false rejections and those with highest FDR within this set are the false positives  
+(c) 5% of the genes in this set are false rejections and those with the lowest FDR within this set are the false positives  
+#(d) 5% of the genes within this set are false rejections of the null hypothesis, but its impossible to tell exactly which ones  
+
+**Q1.8 Imagine that a data analyst comes to you for advice. The analyst wants to obtain DEGs with absolutely no false positives (i.e., no false rejections of null hypothesis = no Type I errors). Which of the following would be the best advice to offer? Select the single best answer [ 1 point ]?**  
+
+(a) this is possible and the analyst should choose the Bonferroni correction  
+(b) this is possible and the analyst should choose the FDR  
+#(c) this is impossible, but the analyst should choose the Bonferroni correction to get closest to the desired outcome  
+(d) this is impossible, but the analyst should choose the FDR method correction to get closest to the desired outcome  
+
+**Q1.9. In the analysis above, we called the `results` function with an argument "alpha" to set the significance threshold. How does this impact your interpretation of the padj column results? [ 1 point ]**
+
+(a) it changes how independent filtering is performed  
+(b) it changes how the FDR (adjusted p-values) are calculated  
+#(c) it changes how the proportion of genes that are Type I errors in the padj column are interpreted  
+
+
+Volcano plots are a popular visualization of genome-wide DGE data. To make one, we need to plot the shrunken log2 fold-change and the adjusted p-values (FDR). This can be made easily with ggplot or Matplotlib (Python).
+
+```{r}
+res.lfcShrink.tbl_df %>% # pipe the data.frame (tibble) to mutate to add a column named "neg_log10_padj" with negative log10 adjusted p-values
+  mutate(neg_log10_padj = -1*log10(padj)) %>% # pipe the modified data.frame (tibble) to first (data) argument of ggplot
+  ggplot(aes(x = log2FoldChange, y = neg_log10_padj)) + # define which columns (variables) to plot on x and y axes with aes()
+  geom_point(color = 'gray') + # add gray points
+  geom_point( data = ~.x %>% filter(log2FoldChange < -2 & neg_log10_padj > 2), color = 'orange') + # add a second layer of orange points on subset of data
+  geom_point( data = ~.x %>% filter(log2FoldChange > 2 & neg_log10_padj > 2), color = 'light blue') + # add a third layer of blue points on subset of data
+  theme_bw()
+  
+```
+
+**Q1.10 Review the plot and code. Which of the following best describes the points in orange. Select the single best answer. (hint: you need to convert from log2 to linear scale to obtain the fold-change in the answer) [ 1 point ]**   
+
+(a) insignificant genes, with 2-fold higher expression in normal compared to tumor  
+(b) insignificant genes, with 4-fold higher expression in normal compared to tumor  
+(c) insignificant genes, with 2-fold higher expression in tumor compared to normal  
+(d) insignificant genes, with 4-fold higher expression in tumor compared to normal  
+(e) significant genes, with 2-fold higher expression in normal compared to tumor  
+#(f) significant genes, with 4-fold higher expression in normal compared to tumor  
+(g) significant genes, with 2-fold higher expression in tumor compared to normal  
+(h) significant genes, with 4-fold higher expression in tumor compared to normal  
+
+**Q1.11 Save the volcano plot and upload accoding to instructions in the "Completing your assignment" section [ 3 points ]**  
+
+
+Often in DGE analysis, researchers are most interested in genes that show "biologically significant" differences in expression. With highly powered experiments (e.g., with large numbers of biological replicates), it is possible to statistically significant DEGs for a large percentage of the genome, even if the fold-change is biologically insignificant. In such cases, often set of genes that are DEGs to both those that are statistically AND biologically significant, where biological significance might be genes that show, for example, a 2-fold difference in expression.
+
+The OSCC dataset has a number of biological replicates, and in this case, the threshold for inferring statistical significance is much higher than the threshold for biological significance (in other words, genes that we infer are statistically significant are very likely to be biologically significant as well). However, if we were working with a dataset with large numbers of biological replicates, one could in theory identify both statisically and biologically relevant DEGs by identifying filtering on both the "log2FoldChange" and "padj" columns in the `res.lfcShrink` object. However, the recommended way to do test for genes above a biologically significant threshold difference in expression is to modify the null hypothesis before conducting the analysis. For example, let's imagine you only want to identify genes that are at least 2-fold different in expression (higher or lower in expression in normal vs. tumor). How would we do this? 
+
+The DESeq2 paper has an entire section dedicated to this concept <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8#:~:text=Hypothesis%20tests%20with%20thresholds%20on%20effect%20size>
+
+Often, we would like to work with human readable gene symbols rather than cryptic ENSEMBL IDs. We can build a map of ENSEMBL gene IDs to human readable gene symbols using AnnotationDbi package. If AnnotationDbi is not installed  use instructions here to install: <https://bioconductor.org/packages/release/bioc/html/AnnotationDbi.html>
+
+Build a tibble with both ENSEMBL and human readable gene symbols for significant DEGs.
+
+First we extract a vector of significant ENSEMBL IDs.
+```{r}
+significant_genes.v <- res.lfcShrink.tbl_df %>%
+  filter(!is.na(padj)) %>% # retain only genes that don't have NA in padj column
+  filter(padj < 0.05) %>% # retain only genes with FDR < 0.05
+  pull(feature_id)
+```
+
+Now obtain the human readable gene symbols of the ENSEMBL genes.
+```{r}
+library(org.Hs.eg.db)
+ensembl2gene.tbl_df <- AnnotationDbi::select(org.Hs.eg.db, keys=significant_genes.v, 
+                  columns="SYMBOL", keytype="ENSEMBL") %>%
+            as_tibble()
+ensembl2gene.tbl_df
+```
+
+Merge the DESeq2 results with this tibble and view the top 10 most significant DEGs. The SYMBOL column contains the human readable gene symbol.
+
+```{r}
+inner_join(x = res.lfcShrink.tbl_df, # DESeq2 results tibble
+           y = ensembl2gene.tbl_df, # ENSEMBL to gene symbol map tibble
+           by = join_by(feature_id == ENSEMBL) ) %>%
+            arrange(padj) 
+```
+
+According to this article <https://www.techscience.com/or/v31n4/53320>, the LAMC2 gene is known to be differentially expressed in OSCC. Execute the following to extract LAMC2 from your results table. 
+
+```{r}
+inner_join(x = res.lfcShrink.tbl_df, # DESeq2 results tibble
+           y = ensembl2gene.tbl_df, # ENSEMBL to gene symbol map tibble
+           by = join_by(feature_id == ENSEMBL) ) %>%
+    filter(SYMBOL == 'LAMC2')
+```
+
+**Q1.12 Which of the following is true about this gene? Select the single best answer [ 1 point ]** 
+
+(a) The gene is does not pass the FDR < 0.05 correction so is not significant  
+(b) The gene is approximately 4-fold higher expressed in tumor vs. normal tissue  
+#(c) The gene is approximately 16-fold higher expressed in tumor vs. normal tissue  
+(d) The gene is approximately 4-fold higher expressed in normal vs. tumor tissue  
+(d) The gene is approximately 16-fold higher expressed in normal vs. tumor tissue  
+
+This concludes the standard approach to processing RNA-seq data with DESeq2 where the main goal was to identify DEGs using an FDR < 0.05. 
+
+Below you will perform what is often a first step towards understanding what biological functions, metabolic pathways, regulatory pathways etc. might contribute to OSCC through analysis of DEGs between tumor and normal tissue.
+
+**Technical note** Recently, Li et al. (2022) <https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02648-4> argue that non-parametric statistics (e.g., Wilcoxon Rank Sum Test) better control the false discovery rate (FDR) and are therefore superior to parametric methods like DESeq2 that assumes read counts among samples follow a negative binomial distribution under the null hypothesis. Of course, one of the problems is that non-parametric approaches require large sample sizes (e.g., at least 8 samples in each treatment and control), but this is rare in NGS analysis because of the expense of collecting this many biological replicates. Nevertheless, if you encounter a situation where large sample sizes are available it is worth considering a non-parametric approach.
+
+
+### Task 2: Gene Ontology (GO) and GO term enrichment
+
+After DEGs have been identified, a popular next step is to conduct a GO enrichment analysis. GO is a comprehensive framework that describes the function of genes. The GO ontology is a set of terms that describe the function of genes with some terms nested within others in a hierarchical fashion. Terms higher in the ontology are more general, and those lower in the ontology are more specific and nested within the higher order terms. 
+
+There are three separate ontologies within GO that have as the top-most term Biological Process (BP), Cellular Compartment (CC), and Molecular Function (MF). Typically analysis is only conducted on one of these three ontologies at a time, the choice of which, depends on the question of interest. To read more, review <https://geneontology.org> and <https://yulab-smu.top/biomedical-knowledge-mining-book/enrichment-overview.html#ora-algorithm>
+
+Let's perform a GO enrichment analysis to determine what biological functions are enriched in our list of significant genes with FDR < 0.05.
+
+Each GO enrichment test is a 2 X 2 test of independence between the property of belonging to a GO category and property of being a DEG. This test is conducted separately **for each GO term**. The test for a single GO term can be visualized in the following table:
+
+```{r}
+tribble(~`DEG class`,~`Genes annotated with GO of interest`,~`Genes not annotated with GO of interest`,~Total,
+        'DEG','n11','n12','n1+',
+        'not DEG','n21','n22','n2+',
+        'Total','n+1','n+2','n')
+        
+```
+
+Here the value in each cell n11, n12, n21, and n22 are counts of genes the others are row totals (n1+,n2+), column totals (n+1,n+2) or grand total (n). We are interested in testing whether counts are independent between rows and columns. 
+
+**Another way to think of a GO enrichment test is to state the question as, is the proportion of genes with the GO term of interest, higher in the DEG set than in the "not DEG" set? In other words, is n11/n12 > n21/n22**. Note that this test is a one-tailed test of enrichment. In principle, one might be interested in a two-tailed test to identify GO terms where n11/n12 != n21/n22 or a depletion test to identify GO terms where n11/n12 < n21/n22, but those are not implemented here.
+
+See here for more detail on GO Enrichment tests: <https://academic.oup.com/bioinformatics/article/23/4/401/181853>.
+
+For this task, you will perform GO enrichment using the clusterProfiler package in R. Install it now using instructions at Bioconductor: 
+<https://bioconductor.org/packages/release/bioc/html/clusterProfiler.html>
+
+
+First, we need to define the background set of genes (i.e., the "gene universe"). 
+
+This could in principle be all genes annotated in the genome (excluding those in the significant gene set), all genes expressed in our analysis (again, excluding those in the significant gene set), or something else, depending on the exact question.  
+
+Here, let's define the universe as any gene which survived the independent filtering process (i.e., in principle it could have been inferred as a DEG). Our hypothesis to be tested is, what GO terms are enriched in the set of genes that we had the ability to detect as differentially expressed in our analysis.
+
+```{r}
+universe_genes.v <- res.lfcShrink.tbl_df %>%
+  filter(!is.na(padj)) %>% # here we preserve any gene that does not have missing data after independent filtering in the results object
+  pull(feature_id)
+
+length(universe_genes.v)
+```
+
+Since we are running tests on many GO terms, we will again use the Benjamin-Hochberg (BH) FDR method for multiple test correction. 
+Now conduct the GO enrichment test for Biological Process ontology using clusterProfiler `enrichGO` function specifying the DEG set of genes in the vector `significant_genes.v` and the gene universe, or background set, in the vector `universe_genes.v`
+
+
+```{r}
+# This will output a data.frame-like object of class enrichResult
+library(clusterProfiler)
+bp.enrichResult <- enrichGO(gene = significant_genes.v, # specifify the significant set of genes
+         OrgDb = org.Hs.eg.db,
+         keyType = "ENSEMBL",
+         ont = "BP", # select Biological Process ontology. Molecular Function (MF) and Cellular Compartment (CC) may also be interesting
+         pAdjustMethod = "BH",
+         universe = universe_genes.v) # specify the background set of genes
+```
+
+Visualize the top 10 enriched ontology terms as a dotplot.
+
+```{r}
+dotplot(bp.enrichResult, showCategory=10)
+```
+
+**Q2.1 Save the dot plot and upload according to instructions in the "Completing your assignment" section [ 3 points ]**  
+
+
+How can we interpret the dot plot and GO enrichment analysis more generally? Let's extract the results for the top GO term labelled "adaptive immune response".
+
+```{r}
+bp.enrichResult %>% # pipe the data.frame-like enrichResult object to the as_tibble function
+  as_tibble() %>% # coerce to a tibble (a data.frame with benefits)
+  filter(Description == "adaptive immune response") 
+```
+
+**Note: not all columns are necessarily visible in the RMarkdown display of the tibble. If you are working interactively you may need to click on a small right-pointing black arrow or widen the left panel in RStudio to visualize.**  
+
+Here we see that the "GeneRatio" is 73/754. This means that 73 of the DEGs are annotated with the "adaptive immune response" GO term (GO:0002250), out of 754 total DEGs. By contrast, the "BgRatio" (background, or universe, ratio) is 437/13656. This means that 437 non-significant genes were annotated with the "adaptive immune response" GO term (GO:0002250), out of 13656 total non-significant genes. 
+
+GO:0002250 is highly significant with FDR < 5.0 x 10-15, as indicated in the p.adjust column.
+
+Returning to the dotplot, the x-axis is the "GeneRatio" column and the value for the "adaptive immune response" is 73/754 = 0.097.  This ratio is higher than other GO terms and explains why the "adaptive immune response" term is right-shifted compared to the others. The size of the of the circle represents the relative number of genes in the set of significant genes (73 for "adaptive immune response"). The color of the points is a gradient indicating most significant (red) and lower significance (blue) according to the adjusted p-value (i.e., FDR).
+
+**Technical note:** What are the pvalue, p.adjust, and qvalue in the GO:0002250 results? The pvalue is the enrichment test p-value for this GO term. However, since the our enrichment analysis consists of many tests (one for each GO term in the Biological Process ontology), each test must be corrected for multiple tests. In this cases, the p.adjust column is what is sometimes referred to as the FDR adjusted p-value or the BH adjusted p-value (provided that the BH method was used for FDR calculation; See `?p.adjust`). This is the standard FDR reported in most DGE analyses. The qvalue is similar to the FDR adjusted p-value, but is calculated using a different method. See this Bioconductor thread if you would like to dig into the details: <https://support.bioconductor.org/p/49864/>. 
+
+You may read more about GO enrichment directly from the clusterProfiler user guide <https://yulab-smu.top/biomedical-knowledge-mining-book/clusterprofiler-go.html> and here <https://guangchuangyu.github.io/2016/01/go-analysis-using-clusterprofiler/>
+
+**Q2.2 The QuickGO website is helpful to better understand a GO term and its place in the GO ontology hierarchy. Go to the QuickGO website <https://www.ebi.ac.uk/QuickGO/> and enter the adaptive immune response GO term "GO:0002250". Is this GO term nested within the Biological Processs, Molecular Function or Cellular Compartment ontology? hint: each of these ontologies is also the top most GO term in the ontology. Click on the "Ancestor Chart" icon to view the hierarchy for the target GO term [ 1 point ]**  
+
+#(a) Biological Process  
+(b) Molecular Function  
+(c) Cellular Compartment  
+
+**Q2.3 What GO term is GO:0002250 a subset of? Select the single best answer? [ 1 point ]**  
+
+(a) GO:0002286  
+#(b) GO:0006955  
+(c) GO:0050778   
+(d) GO:0006959   
+
+Above you saw 10 siginificant GO terms in the dotplot and a breakdown of the most highly significant term, GO:0002250. How many GO terms were significant if we accept a 5% false discovery rate (FDR)?  
+
+```{r}
+bp.enrichResult %>% # pipe the data.frame-like enrichResult object to the as_tibble function
+  as_tibble() %>% # coerce to a tibble (a data.frame with benefits)
+  filter(p.adjust < 0.05) 
+```
+
+**Q2.4 How many GO terms were significant at the FDR < 0.05 lesvel? [ 1 point ]**  
+
+(a) 9  
+(b) 10  
+(c) 17  
+#(d) 169  
+
+#### You are finished. See "Completing your assignment" section for how to upload your assignment.
